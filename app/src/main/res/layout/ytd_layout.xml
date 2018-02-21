@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+  >
+    <include
+
+        android:id="@+id/ytd_tool_bar"
+        layout="@layout/dft_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:elevation="5dp" />
+<LinearLayout
+
+    android:layout_below="@+id/ytd_tool_bar"
+    android:orientation="vertical"
+    android:background="@color/gl_background"
+    android:gravity="center" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/linearLayout">
+
+    <ExpandableListView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Ex_list"
+        android:groupIndicator="@null"
+        >
+    </ExpandableListView>
+   <!-- <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_height="wrap_content"
+        android:elevation="9dp"
+        android:layout_width="match_parent"/>
+    <android.support.v4.view.ViewPager
+        android:layout_marginTop="2dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/viewpager_view"
+        />-->
+</LinearLayout>
+
+<LinearLayout
+    android:background="@color/gl_tab_host_bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gl_dft_header_footer_heading_color"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:gravity="start"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:layout_margin="2dp"
+            android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:text="Dsr Profit"
+        style="@style/GLLblBoldStyleLargeWhite"
+        android:textColor="@color/gl_dft_header_footer_heading_color"
+        />
+        <TextView
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_margin="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:text="Other Cash Out"
+            style="@style/GLLblBoldStyleLargeWhite"
+            android:textColor="@color/gl_dft_header_footer_heading_color"
+            />
+        <TextView
+            android:gravity="end"
+            android:padding="2dp"
+            android:layout_margin="2dp"
+            android:textSize="16sp"
+            android:layout_weight="0.33"
+            android:text="Net Profit"
+            style="@style/GLLblBoldStyleLargeWhite"
+            android:textColor="@color/gl_dft_header_footer_heading_color"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:padding="2dp"
+            android:id="@+id/txt_dsrProfit"
+            android:layout_margin="2dp"
+            android:textSize="14sp"
+            android:layout_weight="0.33"
+            android:text="0"
+            style="@style/GLLblBoldStyleLargeGold" />
+        <TextView
+            android:padding="2dp"
+            android:id="@+id/txt_othercashout"
+            android:layout_margin="2dp"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_weight="0.33"
+            android:text="0"
+            style="@style/GLLblBoldStyleLargeGold"
+            />
+        <TextView
+            android:padding="2dp"
+            android:id="@+id/txt_totalProfit"
+            android:layout_margin="2dp"
+            android:textSize="14sp"
+            android:layout_weight="0.33"
+            android:gravity="end"
+            android:text="0"
+            style="@style/GLLblBoldStyleLargeGold"
+            />
+    </LinearLayout>
+</LinearLayout>
+    </RelativeLayout>

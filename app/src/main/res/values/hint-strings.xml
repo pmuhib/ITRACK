@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="client_emp_name">Employee Name</string>
+    <string name="client_name">Client Name</string>
+    <string name="client_code">Client Code</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="dsr_number">DSR Number</string>
+    <string name="quote_id">Quote Number</string>
+    <string name="company_name">Company Name</string>
+    <string name="select_loading_date">Select Loading Date</string>
+    <string name="select_loading_time">Select Loading Time</string>
+    <string name="select_date_custom_reached">Select date Custom</string>
+    <string name="select_time_custom_reached">Select time Custom</string>
+    <string name="enter_days">Enter Days</string>
+    <string name="enter_custom">Enter Final Customs</string>
+    <string name="enter_client_ref_no">Enter Client Ref #</string>
+    <string name="enter_remark">Enter Remark</string>
+    <string name="eta_date">ETA Date</string>
+    <string name="eta_time">ETA Time</string>
+
+
+    <string name="enter_driver_name">Enter Driver Name</string>
+    <string name="enter_driver_phone">Enter Driver Phone</string>
+    <string name="select_offloading_date">Date</string>
+    <string name="select_offloading_time">Time</string>
+    <string name="select_dn_received_time">Date</string>
+    <string name="select_dn_received_date">Time</string>
+    <string name="enter_our_price">Enter Our Price</string>
+    <string name="enter_our_cost">Enter Our Cost</string>
+    <string name="enter_advance">Enter Advance</string>
+    <string name="enter_detention">Enter Detention</string>
+    <string name="enter_detention_rate">Enter Detention Rate</string>
+    <string name="enter_border_charge">Enter Border Charge</string>
+    <string name="enter_detention_location">Enter Detention Description</string>
+    <string name="enter_cost">Enter Additional Service Cost</string>
+    <string name="enter_cost_client">Enter Additional Services Charges</string>
+    <string name="enter_cost_type">Enter Additional Services Description</string>
+
+
+
+</resources>

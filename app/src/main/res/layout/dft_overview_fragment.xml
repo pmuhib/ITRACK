@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- DFT Balance Details -->
+    <LinearLayout
+        android:layout_marginBottom="2dp"
+        android:id="@+id/dftOpeningBalanceContainer"
+        android:background="@color/gl_tab_host_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <TextView
+            android:text="Opening Balance"
+            style="@style/GLLblBoldStyleLargeGold"
+            android:textColor="@color/gl_dft_header_footer_heading_color"
+            />
+
+        <View
+            style="@style/SeparatorTheme"
+            />
+        <TextView
+            android:id="@+id/tvDFTOpeningBalanceAmount"
+            style="@style/GLLblBoldStyleLargeWhite"
+            android:textColor="@color/gl_dft_header_footer_heading_color"
+            />
+
+    </LinearLayout>
+
+    <!-- DFT categories overview Container -->
+
+    <ScrollView
+        android:layout_below="@+id/dftOpeningBalanceContainer"
+        android:layout_above="@+id/dftBalanceContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:id="@+id/dftOverviewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+
+            >
+
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+       android:layout_centerHorizontal="true" />
+
+
+    <!-- DFT Balance Details -->
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:id="@+id/dftBalanceContainer"
+        android:background="@color/gl_tab_host_bg_color"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/tvDFTCategory"
+            android:text="Closing Balance"
+            style="@style/GLLblBoldStyleLargeGold"
+            android:textColor="@color/gl_dft_header_footer_heading_color"
+            />
+
+        <View
+            style="@style/SeparatorTheme"
+            />
+        <TextView
+            android:id="@+id/tvDFTBalanceAmount"
+            style="@style/GLLblBoldStyleLargeWhite"
+            android:textColor="@color/gl_dft_header_footer_heading_color"
+            />
+        <ProgressBar
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBarBalance"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+</RelativeLayout>

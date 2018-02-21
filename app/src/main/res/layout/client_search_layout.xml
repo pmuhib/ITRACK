@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+    <TextView
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSearch"
+        android:drawableRight="@drawable/search_icon"
+        android:padding="15dp"
+        android:background="?attr/selectableItemBackground"
+      />
+
+    <EditText
+        android:layout_toLeftOf="@+id/tvSearch"
+        style="@style/GLAppEditTextTheme"
+        android:layout_height="30dp"
+        android:id="@+id/etSearchClientName"
+        android:hint="@string/client_name"
+        android:maxLines="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:imeOptions="actionDone"
+        />
+
+    <EditText
+        android:layout_toLeftOf="@+id/tvSearch"
+        android:layout_below="@+id/etSearchClientName"
+        style="@style/GLAppEditTextTheme"
+        android:layout_height="30dp"
+        android:id="@+id/etSearchAccountNumber"
+        android:hint="@string/client_code"
+        android:maxLines="1"
+        android:imeOptions="actionDone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <View
+        android:layout_below="@+id/etSearchAccountNumber"
+       style="@style/DividerTheme" />
+
+
+</RelativeLayout>

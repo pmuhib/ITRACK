@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <TextView
+        android:id="@+id/lblQuoteContactDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/GLTabStyle"
+        android:gravity="center"
+        android:text="@string/contact_details"
+        android:textSize="17sp"
+        android:padding="10dp"
+        />
+    <TextView
+        android:id="@+id/tvSubmitFinalDetails"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        style="@style/GLButtonMarigold"
+        android:gravity="center"
+        android:text="Submit"
+        android:layout_margin="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        />
+    <ScrollView
+        android:layout_below="@+id/lblQuoteContactDetails"
+        android:layout_above="@+id/tvSubmitFinalDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gl_background">
+
+            <!-- <TextView
+                 style="@style/GLLblBoldStyle"
+                 android:text="Services Of\nInterest"
+                 />
+
+             <GridView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:numColumns="2">
+
+             </GridView>
+             -->
+            <View
+                style="@style/DividerTheme"/>
+
+            <TextView
+                android:id="@+id/lblAccountNum"
+                android:text="@string/account_num"
+                style="@style/GLLblBoldStyle" />
+
+            <EditText
+                android:hint="@string/account_num"
+                android:id="@+id/etAccountNumber"
+                android:layout_toRightOf="@+id/lblAccountNum"
+                android:layout_toEndOf="@+id/lblAccountNum"
+                style="@style/GLEditTextTheme" />
+
+            <!---->
+            <View
+                android:layout_below="@id/etAccountNumber"
+                style="@style/DividerTheme"/>
+
+            <TextView
+                android:layout_below="@id/etAccountNumber"
+                android:text="@string/emp_name"
+                style="@style/GLLblBoldStyle" />
+
+            <EditText
+                android:hint="@string/emp_name"
+                android:id="@+id/etClientEmpName"
+                android:layout_below="@id/etAccountNumber"
+                android:layout_toRightOf="@id/lblAccountNum"
+                android:layout_toEndOf="@id/lblAccountNum"
+                style="@style/GLEditTextTheme" />
+            <View
+                android:layout_below="@id/etClientEmpName"
+                style="@style/DividerTheme"/>
+
+            <TextView
+                android:layout_below="@id/etClientEmpName"
+                android:text="@string/company"
+                style="@style/GLLblBoldStyle" />
+
+            <EditText
+                android:hint="@string/company"
+                android:id="@+id/etClientCompany"
+                android:layout_below="@id/etClientEmpName"
+                android:layout_toRightOf="@id/lblAccountNum"
+                android:layout_toEndOf="@id/lblAccountNum"
+                style="@style/GLEditTextTheme" />
+            <View
+                android:layout_below="@id/etClientCompany"
+                style="@style/DividerTheme"/>
+
+            <TextView
+                android:layout_below="@id/etClientCompany"
+                android:text="@string/phone"
+                style="@style/GLLblBoldStyle" />
+
+            <LinearLayout
+                android:layout_below="@id/etClientCompany"
+                android:layout_toRightOf="@id/lblAccountNum"
+                android:layout_toEndOf="@id/lblAccountNum"
+                android:id="@+id/phoneContainer"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/etPhoneCountryCode"
+                    android:hint="code"
+                    android:layout_width="wrap_content"
+                    style="@style/GLEditTextTheme"
+                    android:padding="2dp"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:drawableLeft="@drawable/plus_small"
+                    android:drawableStart="@drawable/plus_small"
+                    android:drawablePadding="2dp"
+                    />
+
+                <EditText
+                    android:padding="1dp"
+                    android:hint="@string/phone"
+                    android:id="@+id/etPhone"
+                    style="@style/GLEditTextTheme"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_below="@id/phoneContainer"
+                style="@style/DividerTheme"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_below="@id/phoneContainer"
+                android:text="@string/fax_txt"
+                style="@style/GLLblBoldStyle"  />
+            <EditText
+                android:visibility="gone"
+                android:hint="@string/fax_txt"
+                android:id="@+id/etFax"
+                android:inputType="number"
+                android:layout_below="@id/phoneContainer"
+                android:layout_toRightOf="@id/lblAccountNum"
+                android:layout_toEndOf="@id/lblAccountNum"
+                style="@style/GLEditTextTheme" />
+            <View
+                android:visibility="gone"
+                android:layout_below="@id/etFax"
+                style="@style/DividerTheme"/>
+
+            <TextView
+                android:layout_below="@id/etFax"
+                android:text="@string/email_txt"
+                style="@style/GLLblBoldStyle" />
+
+            <EditText
+                android:hint="@string/email_txt"
+                android:id="@+id/etEmail"
+                android:layout_below="@id/etFax"
+                android:layout_toRightOf="@id/lblAccountNum"
+                android:layout_toEndOf="@id/lblAccountNum"
+                style="@style/GLEditTextTheme" />
+            <View
+                android:layout_below="@id/etEmail"
+                style="@style/DividerTheme"/>
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_below="@id/etEmail"
+                android:text="@string/address"
+                style="@style/GLLblBoldStyle" />
+
+            <EditText
+                android:visibility="gone"
+                android:hint="@string/address"
+                android:id="@+id/etAddress"
+                android:layout_below="@id/etEmail"
+                android:layout_toRightOf="@id/lblAccountNum"
+                android:layout_toEndOf="@id/lblAccountNum"
+                style="@style/GLEditTextTheme" />
+            <View
+                android:visibility="gone"
+                android:layout_below="@id/etAddress"
+                style="@style/DividerTheme"/>
+
+            <TextView
+                android:layout_below="@id/etAddress"
+
+                android:text="@string/country_txt"
+                style="@style/GLLblBoldStyle" />
+
+            <Spinner
+                android:visibility="gone"
+                android:hint="@string/country_txt"
+                android:id="@+id/spinnerCountryList"
+                android:layout_below="@id/etAddress"
+                android:layout_toRightOf="@id/lblAccountNum"
+                android:layout_toEndOf="@id/lblAccountNum"
+                style="@style/GLSpinnerTheme" />
+
+            <AutoCompleteTextView
+                android:layout_below="@id/etAddress"
+                android:layout_toRightOf="@id/lblAccountNum"
+                android:layout_toEndOf="@id/lblAccountNum"
+                android:id="@+id/autocompleteTVCountry"
+                android:layout_width="match_parent"
+                style="@style/GLAutoTextViewTheme"
+                android:ems="10"
+                android:hint="Select Country"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:completionThreshold="1"
+                android:singleLine="true"
+                />
+
+            <View
+                android:layout_below="@id/autocompleteTVCountry"
+                style="@style/DividerTheme"/>
+
+            <TextView
+                android:layout_below="@id/autocompleteTVCountry"
+                android:text="@string/city_txt"
+                style="@style/GLLblBoldStyle" />
+
+            <Spinner
+                android:visibility="gone"
+                android:id="@+id/spinnerCityList"
+                android:hint="@string/city_txt"
+                android:layout_below="@id/autocompleteTVCountry"
+                android:layout_toRightOf="@id/lblAccountNum"
+                android:layout_toEndOf="@id/lblAccountNum"
+                style="@style/GLSpinnerTheme" />
+
+
+            <AutoCompleteTextView
+                android:layout_below="@id/autocompleteTVCountry"
+                android:layout_toRightOf="@id/lblAccountNum"
+                android:layout_toEndOf="@id/lblAccountNum"
+                android:id="@+id/autocompleteTVCity"
+                android:layout_width="match_parent"
+                style="@style/GLAutoTextViewTheme"
+                android:ems="10"
+                android:hint="Select City"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:completionThreshold="1"
+                android:singleLine="true"
+                />
+            <View
+                android:layout_below="@id/spinnerCityList"
+                style="@style/DividerTheme"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_below="@id/spinnerCityList"
+                android:text="@string/zipcode_txt"
+                style="@style/GLLblBoldStyle" />
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/etZipCode"
+                android:hint="@string/zipcode_txt"
+                android:inputType="number"
+                android:layout_below="@id/spinnerCityList"
+                android:layout_toRightOf="@id/lblAccountNum"
+                android:layout_toEndOf="@id/lblAccountNum"
+                style="@style/GLEditTextTheme" />
+
+            <View
+                android:visibility="gone"
+                android:layout_below="@id/etZipCode"
+                style="@style/DividerTheme"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_below="@id/etZipCode"
+                android:text="@string/industry"
+                style="@style/GLLblBoldStyle" />
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/etIndustry"
+                android:hint="@string/industry"
+                android:layout_below="@id/etZipCode"
+                android:layout_toRightOf="@id/lblAccountNum"
+                android:layout_toEndOf="@id/lblAccountNum"
+                style="@style/GLEditTextTheme" />
+
+            <View
+                android:visibility="gone"
+                android:layout_below="@id/etIndustry"
+                style="@style/DividerTheme"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_below="@id/etIndustry"
+                android:id="@+id/lblContactMethod"
+                android:text="@string/contact_method"
+                style="@style/GLLblBoldStyle" />
+
+          <!--  <EditText
+                android:hint="@string/contact_method"
+                android:id="@+id/etContactMethod"
+                android:layout_below="@id/etIndustry"
+                android:layout_toRightOf="@id/lblContactMethod"
+                android:layout_toEndOf="@id/lblContactMethod"
+                style="@style/GLEditTextTheme" />-->
+
+            <Spinner
+                android:visibility="gone"
+                android:layout_below="@id/etIndustry"
+                android:id="@+id/spinnerContactMethodList"
+                android:layout_toRightOf="@id/lblContactMethod"
+                android:layout_toEndOf="@id/lblContactMethod"
+                style="@style/GLSpinnerTheme"   />
+
+            <View
+                android:visibility="gone"
+                android:layout_below="@id/spinnerCountryList"
+                style="@style/DividerTheme"/>
+
+           <!-- <TextView
+
+                android:layout_below="@id/etContactMethod"
+                android:text="@string/message"
+                style="@style/GLLblBoldStyle" />
+
+            <EditText
+                android:hint="@string/message"
+                android:id="@+id/etMessageQuote"
+                android:layout_below="@id/etContactMethod"
+                android:layout_toRightOf="@id/lblContactMethod"
+                android:layout_toEndOf="@id/lblContactMethod"
+                style="@style/GLEditTextTheme" />
+            <View
+                android:layout_below="@id/etMessageQuote"
+                style="@style/DividerTheme"/>-->
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

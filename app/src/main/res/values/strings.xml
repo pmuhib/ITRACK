@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">ITRACK</string>
+    <string name="dsr_txt">DSR</string>
+    <string name="quote_txt">Instant Rates</string>
+    <string name="event_txt">Event</string>
+    <string name="news_txt">News</string>
+    <string name="companyinfo_txt">Company \n Information</string>
+    <string name="myprofile_txt">My Profile</string>
+    <string name="clients_txt">Clients</string>
+    <string name="comp_info_txt">Company\nInformation</string>
+    <string name="message_txt">Message</string>
+    <string name="tools_txt">Tools</string>
+    <string name="global_txt">Global Logistics</string>
+    <string name="itrack_txt">i-Track</string>
+    <string name="by_txt">By</string>
+    <string name="cmp_txt">Company Name</string>
+    <string name="address1_txt">Address 1</string>
+    <string name="address2_txt">Address 2</string>
+    <string name="country_txt">Country</string>
+    <string name="state_txt">State</string>
+    <string name="city_txt">City</string>
+    <string name="zipcode_txt">Zip Code</string>
+    <string name="phone_txt">Phone</string>
+    <string name="email_txt">Email</string>
+    <string name="fax_txt">Fax</string>
+    <string name="domain_txt">Domain Name</string>
+    <string name="cmplogo_txt">Company Logo</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string-array name="titleDrawer">
+        <item>DASHBOARD</item>
+        <item>CLIENTS</item>
+        <item>DSR</item>
+        <item>INSTANT RATES</item>
+        <item>TOOLS</item>
+        <item>MESSAGE</item>
+        <item>NEWS</item>
+        <item>MY PROFILE</item>
+        <item>LOGOUT</item>
+    </string-array>
+
+    <string-array name="titleDrawerClient">
+        <item>DASHBOARD</item>
+        <item>DSR</item>
+        <item>INSTANT RATES</item>
+        <item>TOOLS</item>
+        <item>MESSAGE</item>
+        <item>NEWS</item>
+        <item>CONTACTS</item>
+        <item>LOGIN</item>
+        <item>MY PROFILE</item>
+        <item>COMPANY INFORMATION</item>
+        <item>LOGOUT</item>
+    </string-array>
+
+
+    <string-array name="countries">
+        <item>Kuwait</item>
+        <item>UAE</item>
+        <item>Oman</item>
+        <item>Saudi Arabia</item>
+    </string-array>
+
+
+    <string-array name="typeArr">
+        <item>Employee</item>
+        <item>Client</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Truck Financial -->
+    <string name="our_price_to_customer">Trip Rate</string>
+    <string name="our_cost">Our Cost</string>
+
+    <!-- Contact Us -->
+    <string name="map">Map</string>
+    <string name="call_back">Call Back</string>
+    <string name="contact_address">P.O.Box:474452. EBC Building,1st Floor, Office # 13, Dubai Investment Park,UAE</string>
+    <string name="contact_mobile">+97 1505581009</string>
+    <string name="contact_telephone">+97 148135700</string>
+    <string name="contact_fax">+97 148135725</string>
+    <string name="search_company">Search your Company,it may be registered with us.If so,add yourself as Company member.If not,Please add your company first.</string>
+</resources>

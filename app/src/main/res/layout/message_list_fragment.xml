@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/bottombar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/gl_bottom_bar"
+        >
+        <ImageView
+            android:id="@+id/ivGoToHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_icon"
+            android:layout_centerVertical="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="?attr/selectableItemBackground"
+            android:layout_alignParentLeft="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/navigation_dot_icon"
+            android:layout_centerVertical="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:id="@+id/composeMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/compose"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            />
+
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_above="@id/bottombar"
+        android:id="@+id/recyclerMessageList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        />
+
+
+
+</RelativeLayout>

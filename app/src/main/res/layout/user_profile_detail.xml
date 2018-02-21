@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gl_background"
+    android:orientation="vertical"
+    >
+
+    <!--Top ToolBar-->
+    <include
+        layout="@layout/detailtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:elevation="5dp"
+        />
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <!-- Company Logo -->
+            <ImageView
+                android:id="@+id/companyLogo"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_margin="15dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/circledefault"/>
+
+            <!--Admin Company Employee Name-->
+            <TextView
+                android:layout_below="@+id/companyLogo"
+                android:id="@+id/companyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+
+            <View
+                android:layout_below="@+id/companyName"
+                style="@style/DividerTheme"/>
+
+            <!--Admin Company Employee's Company Name-->
+            <TextView
+                android:id="@+id/companyhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/company"
+                android:textSize="16sp"
+                android:textColor="#d9d9d9"
+                android:gravity="center"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/companyNamee"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="#d9d9d9"
+                android:gravity="left"
+                android:visibility="gone"
+                />
+
+            <!--Admin Company Employee's Designation Name-->
+            <TextView
+                android:id="@+id/lblAdminEmployeeDesignation"
+                android:layout_below="@+id/companyName"
+                style="@style/GLLblBoldStyle"
+                android:text="@string/designation"
+                />
+
+            <TextView
+                android:id="@+id/clientfax"
+                android:layout_below="@id/companyName"
+                android:layout_toRightOf="@+id/lblAdminEmployeeLoadingPoint"
+                android:layout_toEndOf="@+id/lblAdminEmployeeLoadingPoint"
+                style="@style/GLLblNormalStyle"
+                />
+
+            <View
+                android:layout_below="@+id/clientfax"
+                style="@style/DividerTheme"/>
+            <TextView
+                android:layout_below="@+id/clientfax"
+                android:text="@string/phone"
+                style="@style/GLLblBoldStyle"
+                />
+
+            <TextView
+                android:id="@+id/phoneno"
+                android:layout_below="@+id/clientfax"
+                android:layout_toRightOf="@+id/lblAdminEmployeeLoadingPoint"
+                android:layout_toEndOf="@+id/lblAdminEmployeeLoadingPoint"
+                style="@style/GLLblNormalStyle"
+                />
+
+            <View
+                android:layout_below="@+id/phoneno"
+                style="@style/DividerTheme"/>
+
+            <TextView
+                android:layout_below="@+id/phoneno"
+                android:text="@string/email"
+                style="@style/GLLblBoldStyle"
+               />
+
+            <TextView
+                android:id="@+id/clientemail"
+                android:layout_below="@+id/phoneno"
+                android:layout_toRightOf="@+id/lblAdminEmployeeLoadingPoint"
+                android:layout_toEndOf="@+id/lblAdminEmployeeLoadingPoint"
+                style="@style/GLLblNormalStyle"
+                />
+
+            <View
+                android:layout_below="@+id/clientemail"
+                style="@style/DividerTheme"/>
+            <TextView
+                android:layout_below="@+id/clientemail"
+                android:text="@string/user_type"
+                style="@style/GLLblBoldStyle"
+                />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_below="@+id/clientemail"
+                android:layout_toRightOf="@+id/lblAdminEmployeeLoadingPoint"
+                android:layout_toEndOf="@+id/lblAdminEmployeeLoadingPoint"
+                style="@style/GLLblNormalStyle"
+                />
+            <View
+                android:layout_below="@+id/type"
+                style="@style/DividerTheme"/>
+
+
+            <TextView
+                android:id="@+id/lblAdminEmployeeLoadingPoint"
+                android:layout_below="@+id/type"
+                android:text="@string/loading_point"
+                style="@style/GLLblBoldStyle"
+                />
+
+            <TextView
+                android:id="@+id/loadingpoint"
+                android:layout_below="@+id/type"
+                android:layout_toRightOf="@+id/lblAdminEmployeeLoadingPoint"
+                android:layout_toEndOf="@+id/lblAdminEmployeeLoadingPoint"
+                style="@style/GLLblNormalStyle"
+                />
+
+            <View
+                android:id="@+id/lastDividerLine"
+                android:layout_below="@id/loadingpoint"
+                style="@style/DividerTheme"/>
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_below="@+id/loadingpoint"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#d9d9d9"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/companywebsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loadingpoint"
+                android:layout_toRightOf="@+id/lblAdminEmployeeLoadingPoint"
+                android:layout_toEndOf="@+id/lblAdminEmployeeLoadingPoint"
+                android:text=""
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:textColor="#d9d9d9"
+                android:gravity="left"
+                android:layout_margin="5dp"
+                /><!-- android:clickable="true"
+        android:autoLink="web"-->
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
+

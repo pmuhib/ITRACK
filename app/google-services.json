@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "256057505821",
+    "firebase_url": "https://ancient-figure-136513.firebaseio.com",
+    "project_id": "ancient-figure-136513",
+    "storage_bucket": "ancient-figure-136513.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256057505821:android:98e0ff6a21d12c0e",
+        "android_client_info": {
+          "package_name": "com.client.itrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "256057505821-tdgmda995uq6hf00gu3btiilmfct0ujf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.client.itrack",
+            "certificate_hash": "29F8855017EE37B453D8BDDC12A8384E45E14400"
+          }
+        },
+        {
+          "client_id": "256057505821-33nac9lg3ovn35gc06lq4orri1sn1c3b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAp-4py1BmVVoF7q4TdYogCkVX5vO5qPPk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "256057505821-33nac9lg3ovn35gc06lq4orri1sn1c3b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

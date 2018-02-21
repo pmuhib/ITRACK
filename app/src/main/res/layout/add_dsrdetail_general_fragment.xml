@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/dsr_tabbar">
+    <TextView
+        android:id="@+id/heading_gen_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gen_info"
+        android:textSize="17sp"
+        android:padding="10dp"
+        style="@style/GLTabStyle"/>
+    <TextView
+        android:id="@+id/btn_next_submit_dsr"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        style="@style/GLButtonMarigold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:drawableRight="@drawable/nextarrow"
+        android:drawableEnd="@drawable/nextarrow"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Next"
+        />
+    <TextView
+        android:id="@+id/btn_save_general_dsr"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        style="@style/GLButtonMarigold"
+        android:layout_toLeftOf="@+id/btn_next_submit_dsr"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Save"
+        />
+
+    <ScrollView
+
+        android:layout_above="@+id/btn_next_submit_dsr"
+        android:id="@+id/scrollVGenDSR"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/heading_gen_info"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:text="@string/client"
+                style="@style/GLLblBoldStyle" />
+
+            <Spinner
+                android:layout_toRightOf="@+id/lblDestinationPoint"
+                android:layout_toEndOf="@+id/lblDestinationPoint"
+                android:id="@+id/spinnerListClientComp"
+                style="@style/GLSpinnerTheme" />
+            <View
+                android:layout_below="@+id/spinnerListClientComp"
+                style="@style/DividerTheme"/>
+
+            <TextView
+                android:layout_below="@+id/spinnerListClientComp"
+                android:text="@string/dsr_ref_no"
+                style="@style/GLLblBoldStyle" />
+
+            <EditText
+                android:hint="@string/dsr_ref_no"
+                android:layout_below="@+id/spinnerListClientComp"
+                android:layout_toRightOf="@id/lblDestinationPoint"
+                android:layout_toEndOf="@id/lblDestinationPoint"
+                android:focusable="false"
+                android:enabled="false"
+                android:id="@+id/etDsrRefNum"
+                style="@style/GLEditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                />
+            <View
+                android:layout_below="@+id/etDsrRefNum"
+                style="@style/DividerTheme"/>
+
+            <TextView
+                android:layout_below="@+id/etDsrRefNum"
+                style="@style/GLLblBoldStyle"
+                android:text="@string/dsr_date_time"
+                />
+
+            <RelativeLayout
+                android:layout_below="@+id/etDsrRefNum"
+                android:layout_toRightOf="@id/lblDestinationPoint"
+                android:layout_toEndOf="@id/lblDestinationPoint"
+                android:id="@+id/dsrDTContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:enabled="false"
+                >
+
+                <ImageView
+                    android:layout_toLeftOf="@+id/ivDSRTime"
+                    android:layout_toStartOf="@+id/ivDSRTime"
+                    android:id="@+id/ivDSRDate"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:focusable="false"
+                    android:enabled="false"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:background="@drawable/edittext_bg"
+                    android:src="@drawable/calender" />
+                <ImageView
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/ivDSRTime"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:focusable="false"
+                    android:enabled="false"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:background="@drawable/edittext_bg"
+                    android:src="@drawable/time"
+                    />
+                <LinearLayout
+                    android:layout_below="@+id/ivDSRDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+                    <EditText
+                        android:id="@+id/etDSRDate"
+                        style="@style/GLEditTextTheme"
+                        android:hint="DSR Date"
+                        android:focusable="false"
+                        android:enabled="false"
+                        android:layout_weight="1"
+
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+
+                        android:id="@+id/etDSRTime"
+                        android:hint="DSR Time"
+                        style="@style/GLEditTextTheme"
+                        android:focusable="false"
+                        android:enabled="false"
+                        android:layout_weight="1"
+
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_below="@+id/dsrDTContainer"
+                style="@style/DividerTheme"/>
+            <TextView
+                android:layout_below="@+id/dsrDTContainer"
+                android:text="@string/client_ref_no"
+                style="@style/GLLblBoldStyle" />
+            <EditText
+                android:layout_below="@+id/dsrDTContainer"
+                android:layout_toRightOf="@id/lblDestinationPoint"
+                android:layout_toEndOf="@id/lblDestinationPoint"
+                android:id="@+id/etClientCompRefNum"
+                android:hint="@string/enter_client_ref_no"
+                style="@style/GLEditTextTheme"
+                android:layout_width="match_parent"
+                />
+
+            <View
+                android:layout_below="@+id/etClientCompRefNum"
+                style="@style/DividerTheme"/>
+            <TextView
+                android:layout_below="@+id/etClientCompRefNum"
+                style="@style/GLLblBoldStyle"
+                android:text="Loading Location"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/loadingPointContainer"
+                android:layout_below="@+id/etClientCompRefNum"
+                android:layout_toRightOf="@id/lblDestinationPoint"
+                android:layout_toEndOf="@id/lblDestinationPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/ivAddLoadingPoint"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/edittext_bg"
+                    android:src="@drawable/add"
+                    android:layout_gravity="center"
+                    />
+                <Spinner
+                    android:visibility="gone"
+                    android:layout_toLeftOf="@+id/ivAddLoadingPoint"
+                    android:layout_toStartOf="@+id/ivAddLoadingPoint"
+                    android:id="@+id/spinnerListLoadingPoint"
+                    style="@style/GLSpinnerTheme"
+                    />
+
+                <AutoCompleteTextView
+                    android:layout_toLeftOf="@+id/ivAddLoadingPoint"
+                    android:layout_toStartOf="@+id/ivAddLoadingPoint"
+                    android:id="@+id/autocompleteTVLoadingPoint"
+                    android:layout_width="match_parent"
+                    style="@style/GLAutoTextViewTheme"
+                    android:ems="10"
+                    android:hint="Select City"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:completionThreshold="1"
+
+                    />
+
+                <LinearLayout
+                    android:layout_below="@+id/autocompleteTVLoadingPoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+                    <EditText
+                        android:id="@+id/etLoadingPointCity"
+                        style="@style/GLEditTextTheme"
+                        android:hint="City"
+                        android:focusable="false"
+                        android:enabled="false"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+
+                        android:id="@+id/etLoadingPointCountry"
+                        android:hint="Country"
+                        style="@style/GLEditTextTheme"
+                        android:focusable="false"
+                        android:enabled="false"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <View
+                android:layout_below="@+id/loadingPointContainer"
+                style="@style/DividerTheme"/>
+            <TextView
+                android:layout_below="@+id/loadingPointContainer"
+                android:id="@+id/lblDestinationPoint"
+                android:text="Destination Location"
+                style="@style/GLLblBoldStyle"  />
+
+            <RelativeLayout
+                android:id="@+id/destinationPointContainer"
+                android:layout_below="@+id/loadingPointContainer"
+                android:layout_toRightOf="@id/lblDestinationPoint"
+                android:layout_toEndOf="@id/lblDestinationPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/ivAddDestinationPoint"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/edittext_bg"
+                    android:src="@drawable/add"
+                    android:layout_gravity="center"/>
+                <Spinner
+                    android:visibility="gone"
+                    android:layout_toLeftOf="@+id/ivAddDestinationPoint"
+                    android:layout_toStartOf="@+id/ivAddDestinationPoint"
+                    android:id="@+id/spinnerListDestinationPoint"
+                    style="@style/GLSpinnerTheme"
+                    />
+
+                <AutoCompleteTextView
+                    android:layout_toLeftOf="@+id/ivAddDestinationPoint"
+                    android:layout_toStartOf="@+id/ivAddDestinationPoint"
+                    android:id="@+id/autocompleteTVDestinationPoint"
+                    android:layout_width="match_parent"
+                    style="@style/GLAutoTextViewTheme"
+                    android:ems="10"
+                    android:hint="Select City"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:completionThreshold="1"
+                    android:singleLine="true"
+                    />
+
+                <LinearLayout
+                    android:layout_below="@+id/autocompleteTVDestinationPoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+                    <EditText
+                        android:id="@+id/etDestinationPointCity"
+                        style="@style/GLEditTextTheme"
+                        android:hint="City"
+                        android:focusable="false"
+                        android:enabled="false"
+                        android:layout_weight="1"
+
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+
+                        android:id="@+id/etDestinationPointCountry"
+                        android:hint="Country"
+                        style="@style/GLEditTextTheme"
+                        android:focusable="false"
+                        android:enabled="false"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_below="@+id/destinationPointContainer"
+                style="@style/DividerTheme"/>
+
+            <TextView
+                android:layout_below="@+id/destinationPointContainer"
+                android:text="Loading Date"
+                style="@style/GLLblBoldStyle" />
+
+
+            <RelativeLayout
+                android:layout_below="@+id/destinationPointContainer"
+                android:layout_toRightOf="@id/lblDestinationPoint"
+                android:layout_toEndOf="@id/lblDestinationPoint"
+                android:id="@+id/loadingDTContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:layout_toLeftOf="@+id/ivLoadingTime"
+                    android:layout_toStartOf="@+id/ivLoadingTime"
+                    android:id="@+id/ivLoadingDate"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/calender"
+                    android:background="@drawable/edittext_bg"/>
+
+                <ImageView
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/ivLoadingTime"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/edittext_bg"
+                    android:src="@drawable/time"
+                    />
+                <TextView
+                    android:id="@+id/tvNowDateTime"
+                    android:layout_toLeftOf="@+id/ivLoadingDate"
+                    android:text="Now"
+                    android:gravity="center"
+                    style="@style/GLEditTextTheme"/>
+
+                <LinearLayout
+
+                    android:layout_below="@+id/ivLoadingDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="@string/select_loading_date"
+                        android:id="@+id/etLoadingDate"
+                        style="@style/GLEditTextTheme"
+                        />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="@string/select_loading_time"
+                        android:id="@+id/etLoadingTime"
+                        style="@style/GLEditTextTheme"
+                        />
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_below="@+id/loadingDTContainer"
+                style="@style/DividerTheme"/>
+            <TextView
+                android:layout_below="@+id/loadingDTContainer"
+                android:text="TT"
+                style="@style/GLLblBoldStyle" />
+            <LinearLayout
+                android:id="@+id/ttContainer"
+                android:layout_below="@+id/loadingDTContainer"
+                android:layout_toRightOf="@id/lblDestinationPoint"
+                android:layout_toEndOf="@id/lblDestinationPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etTT"
+                    style="@style/GLEditTextTheme"
+                    android:hint="@string/enter_days"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:inputType="number"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    style="@style/GLLblNormalStyle"
+                    android:text="Days"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_below="@+id/ttContainer"
+                style="@style/DividerTheme"/>
+            <TextView
+                android:layout_below="@+id/ttContainer"
+                android:text="ETA"
+                style="@style/GLLblBoldStyle"  />
+
+
+            <RelativeLayout
+                android:id="@+id/etaDTContainer"
+                android:layout_below="@+id/ttContainer"
+                android:layout_toRightOf="@id/lblDestinationPoint"
+                android:layout_toEndOf="@id/lblDestinationPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:layout_toLeftOf="@+id/ivETATime"
+                    android:layout_toStartOf="@+id/ivETATime"
+                    android:id="@+id/ivETA"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:background="@drawable/edittext_bg"
+                    android:src="@drawable/time"
+                    android:visibility="gone"
+                    />
+                <ImageView
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/ivETATime"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:background="@drawable/edittext_bg"
+                    android:src="@drawable/calender"
+                    android:visibility="gone"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_below="@+id/ivETA"
+                    >
+                    <EditText
+                        android:id="@+id/etETADate"
+                        android:hint="@string/eta_date"
+                        style="@style/GLEditTextTheme"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp"
+                        />
+
+                    <EditText
+
+                        android:id="@+id/etETATime"
+                        android:hint="@string/eta_time"
+                        style="@style/GLEditTextTheme"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_below="@+id/etaDTContainer"
+                style="@style/DividerTheme"/>
+
+
+
+            <TextView
+                android:layout_below="@+id/etaDTContainer"
+                android:text="Customs Point"
+                style="@style/GLLblBoldStyle"  />
+
+            <RelativeLayout
+                android:id="@+id/customDSRContainer"
+                android:layout_below="@+id/etaDTContainer"
+                android:layout_toRightOf="@id/lblDestinationPoint"
+                android:layout_toEndOf="@id/lblDestinationPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/ivAddCustomPoint"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/edittext_bg"
+                    android:src="@drawable/add"
+                    android:layout_gravity="center"/>
+                <Spinner
+                    android:layout_toLeftOf="@+id/ivAddCustomPoint"
+                    android:layout_toStartOf="@+id/ivAddCustomPoint"
+                    android:id="@+id/spinnerListCustoms"
+                    style="@style/GLSpinnerTheme"
+                    android:layout_width="match_parent"
+                    />
+            </RelativeLayout>
+
+            <!--<EditText-->
+            <!--android:layout_below="@+id/etaDTContainer"-->
+            <!--android:layout_toRightOf="@id/lblDestinationPoint"-->
+            <!--android:layout_toEndOf="@id/lblDestinationPoint"-->
+            <!--android:id="@+id/etCustoms"-->
+            <!--android:hint="@string/enter_custom"-->
+            <!--style="@style/GLEditTextTheme"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="30dp"-->
+
+            <!--/>-->
+
+            <View
+                android:layout_below="@+id/customDSRContainer"
+                style="@style/DividerTheme"/>
+
+            <TextView
+                android:layout_below="@+id/customDSRContainer"
+                android:text="@string/eta_customs"
+                style="@style/GLLblBoldStyle"  />
+            <RelativeLayout
+                android:id="@+id/dtReachedCustomContainer"
+                android:layout_below="@+id/customDSRContainer"
+                android:layout_toRightOf="@id/lblDestinationPoint"
+                android:layout_toEndOf="@id/lblDestinationPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/ivDateReachedCustom"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/edittext_bg"
+                    android:src="@drawable/calender" />
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/ivTimeReachedCustom"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/time"
+                    android:background="@drawable/edittext_bg"
+                    />
+
+                <LinearLayout
+                    android:layout_below="@+id/ivDateReachedCustom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+                    <EditText
+                        android:id="@+id/etDateReachedCustom"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="@string/select_date_custom_reached"
+                        style="@style/GLEditTextTheme"
+                        android:layout_height="30dp" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="8AM"
+                        android:id="@+id/etTimeReachedCustom"
+                        style="@style/GLEditTextTheme"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_below="@+id/dtReachedCustomContainer"
+                style="@style/DividerTheme"/>
+
+
+
+            <TextView
+                android:layout_below="@+id/dtReachedCustomContainer"
+                android:text="@string/remark"
+                style="@style/GLLblBoldStyle" />
+
+            <EditText
+                android:layout_below="@+id/dtReachedCustomContainer"
+                android:layout_toRightOf="@id/lblDestinationPoint"
+                android:layout_toEndOf="@id/lblDestinationPoint"
+                android:id="@+id/etRemark"
+                android:hint="@string/enter_remark"
+                style="@style/GLEditTextTheme"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:singleLine="false"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                />
+
+            <View
+                android:layout_below="@+id/etRemark"
+                style="@style/DividerTheme"/>
+
+
+            <TextView
+                android:id="@+id/lblStatusDSR"
+                android:layout_below="@+id/etRemark"
+                style="@style/GLLblBoldStyle"
+                android:text="@string/status"
+                />
+            <RelativeLayout
+                android:id="@+id/statusDSRContainer"
+                android:layout_below="@+id/etRemark"
+                android:layout_toRightOf="@id/lblDestinationPoint"
+                android:layout_toEndOf="@id/lblDestinationPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/ivAddStatus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/edittext_bg"
+                    android:src="@drawable/add"
+                    android:layout_gravity="center"
+                    />
+                <Spinner
+                    android:layout_toLeftOf="@+id/ivAddStatus"
+                    android:layout_toStartOf="@+id/ivAddStatus"
+                    android:id="@+id/spinnerListStatusDSR"
+                    style="@style/GLSpinnerTheme"
+                    android:layout_width="match_parent"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_below="@+id/statusDSRContainer"
+                style="@style/DividerTheme"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

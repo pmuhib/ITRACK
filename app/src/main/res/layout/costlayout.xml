@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/lblCost"
+            style="@style/GLLblBoldStyle"
+            android:layout_width="160dp"
+            android:text="@string/cost"
+            />
+        <EditText
+            android:id="@+id/tvaddForCost"
+            style="@style/GLEditTextTheme"
+            android:layout_height="40dp"
+            android:hint="@string/enter_cost"
+            android:inputType="number"
+            android:padding="5dp" />
+    </LinearLayout>
+    <View
+        style="@style/DividerTheme"
+       />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/lblCostClient"
+            style="@style/GLLblBoldStyle"
+            android:layout_width="160dp"
+            android:text="@string/cost_client" />
+
+        <EditText
+            android:id="@+id/tvaddForCostClient"
+            style="@style/GLEditTextTheme"
+            android:layout_height="40dp"
+            android:hint="@string/enter_cost_client"
+            android:inputType="number"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <View
+        style="@style/DividerTheme"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/lblCostType"
+            style="@style/GLLblBoldStyle"
+            android:layout_width="160dp"
+            android:text="@string/cost_type"
+            />
+        <EditText
+            android:id="@+id/tvaddForCostType"
+            style="@style/GLEditTextTheme"
+            android:layout_height="40dp"
+            android:hint="@string/enter_cost_type"
+            android:inputType="text"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+    <View
+        style="@style/DividerTheme"
+        />
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gl_background"
+    >
+    <LinearLayout
+        android:id="@+id/choiceContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="30dp"
+
+        >
+        <TextView
+            android:id="@+id/txt_AddWithCompanyDomain"
+            style="@style/GLButtonMarigold"
+            android:layout_width="match_parent"
+            android:text="Sign up Company having Registered Web Domain"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_AddAsIndividual"
+            style="@style/GLButtonMarigold"
+            android:layout_width="match_parent"
+            android:text="Sign up as Individual/without Website"/>
+    </LinearLayout>
+    </RelativeLayout>

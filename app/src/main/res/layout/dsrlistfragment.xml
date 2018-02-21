@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gl_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="48dp"
+        android:orientation="vertical">
+
+        <!--  Search DSR Form -->
+
+        <include
+            android:id="@+id/dsr_search_form"
+            layout="@layout/dsr_search_layout"/>
+
+        <include layout="@layout/dsr_status_legends" />
+        <!--  List  DSR -->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/dsrlistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left" />
+    </LinearLayout>
+
+
+    <!--  Action Bar DSR -->
+
+    <RelativeLayout
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:background="@color/gl_bottom_bar">
+
+        <ImageView
+            android:id="@+id/addDsrIcn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="gone"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/plus_bottom_icon" />
+
+        <ImageView
+            android:id="@+id/ivDSRFilterIcn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/filter_icn"
+            android:background="?attr/selectableItemBackground"
+            />
+
+        <ImageView
+            android:id="@+id/ivDsrSrchIcn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/search_icon" />
+    </RelativeLayout>
+
+</FrameLayout>

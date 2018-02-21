@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gl_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/lblClients"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/client"
+           style="@style/GLLblBoldStyle"
+          />
+
+        <Spinner
+            android:id="@+id/company_spinner"
+            style="@style/GLAPPSpinnerTheme"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/lblEmployee"
+            android:layout_toEndOf="@+id/lblEmployee"/>
+
+
+        <TextView
+            android:id="@+id/lblEmployee"
+            android:layout_below="@+id/lblClients"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/employee"
+            style="@style/GLLblBoldStyle"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerCompEmployee"
+            style="@style/GLAPPSpinnerTheme"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/company_spinner"
+            android:layout_toRightOf="@+id/lblEmployee"
+            android:layout_toEndOf="@+id/lblEmployee"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerAdminEmployee"
+            style="@style/GLAPPSpinnerTheme"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/company_spinner"
+            android:layout_toRightOf="@+id/lblEmployee"
+            android:layout_toEndOf="@+id/lblEmployee"
+            />
+        <EditText
+            android:id="@+id/etAdminName"
+            style="@style/GLAppEditTextTheme"
+            android:enabled="false"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/lblEmployee"
+            android:layout_toEndOf="@+id/lblEmployee"/>
+        <TextView
+            android:id="@+id/lblSubject"
+            android:layout_height="40dp"
+            android:layout_below="@+id/lblEmployee"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/subject"
+            style="@style/GLLblBoldStyle"/>
+
+        <EditText
+            android:id="@+id/etMessageSubject"
+            style="@style/GLAppEditTextTheme"
+            android:layout_height="40dp"
+            android:layout_below="@+id/lblEmployee"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/lblEmployee"
+            android:layout_toEndOf="@+id/lblEmployee"/>
+
+
+        <TextView
+            android:id="@+id/lblMessage"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblSubject"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/message"
+            style="@style/GLLblBoldStyle"/>
+
+        <EditText
+            android:id="@+id/etMessageBody"
+            style="@style/GLAppEditTextTheme"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/etMessageSubject"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/lblEmployee"
+            android:layout_toEndOf="@+id/lblEmployee"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:singleLine="false" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etMessageBody"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvSendMessage"
+                android:layout_width="100dp"
+                android:layout_margin="10dp"
+                style="@style/GLButtonMarigold"
+                android:text="@string/send"
+                android:textSize="14sp"
+
+                />
+
+            <TextView
+                android:id="@+id/tvCancelMessageSend"
+                android:layout_width="100dp"
+                android:layout_margin="10dp"
+                style="@style/GLButtonMarigold"
+                android:textSize="14sp"
+                android:text="@string/cancel"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

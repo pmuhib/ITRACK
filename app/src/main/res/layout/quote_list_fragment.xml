@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gl_background">
+
+    <include android:id="@+id/quote_search_form"
+        layout="@layout/quotes_search_layout"
+        />
+
+    <RelativeLayout
+        android:id="@+id/bottombar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:background="@color/gl_bottom_bar">
+
+        <ImageView
+            android:id="@+id/addQuoteIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="gone"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/plus_bottom_icon" />
+
+        <ImageView
+            android:id="@+id/ivQuoteFilterIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/filter_icn"
+            android:background="?attr/selectableItemBackground"
+            />
+
+        <ImageView
+            android:id="@+id/ivQuoteSearchIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/search_icon" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_above="@+id/bottombar"
+        android:layout_below="@+id/quote_search_form"
+        android:id="@+id/recyclerQuoteList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+</RelativeLayout>

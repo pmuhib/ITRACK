@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:id="@+id/scrollVCargoDSR"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+        <!---->
+        <TextView
+            android:text="@string/driver_name"
+            style="@style/GLLblBoldStyle"
+            android:layout_width="150dp"/>
+        <EditText
+            android:layout_toRightOf="@+id/lblDNReceiveDateTime"
+            android:layout_toEndOf="@+id/lblDNReceiveDateTime"
+            android:id="@+id/etTruckDriverName"
+            android:hint="@string/enter_driver_name"
+            style="@style/GLEditTextTheme"
+            />
+        <View
+            android:layout_below="@+id/etTruckDriverName"
+            style="@style/DividerTheme"/>
+        <!---->
+        <TextView
+            android:layout_below="@+id/etTruckDriverName"
+            android:text="@string/driver_phone"
+            style="@style/GLLblBoldStyle" />
+        <LinearLayout
+            android:layout_below="@+id/etTruckDriverName"
+            android:layout_toRightOf="@+id/lblDNReceiveDateTime"
+            android:layout_toEndOf="@+id/lblDNReceiveDateTime"
+            android:id="@+id/phoneContainer"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etPhoneCountryCode"
+                android:hint="code"
+                android:layout_width="wrap_content"
+                style="@style/GLEditTextTheme"
+                android:padding="2dp"
+                android:inputType="number"
+                android:maxLength="3"
+
+                android:layout_marginRight="0dp"
+                android:layout_marginEnd="0dp"
+                android:drawableLeft="@drawable/plus_small"
+                android:drawablePadding="2dp"
+                />
+
+            <EditText
+                android:padding="1dp"
+                android:id="@+id/etTruckDriverPhone"
+                android:hint="@string/enter_driver_phone"
+                style="@style/GLEditTextTheme"
+               android:layout_margin="1dp"
+                android:inputType="number"
+                android:maxLength="12"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_below="@+id/phoneContainer"
+            style="@style/DividerTheme"/>
+        <!---->
+        <TextView
+            android:layout_below="@+id/phoneContainer"
+            android:text="@string/type_of_trailer"
+            android:layout_width="150dp"
+            style="@style/GLLblBoldStyle"/>
+        <RelativeLayout
+            android:id="@+id/trailerTypeCont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/lblDNReceiveDateTime"
+            android:layout_toEndOf="@+id/lblDNReceiveDateTime"
+            android:layout_below="@+id/phoneContainer">
+            <ImageView
+                android:background="@drawable/edittext_bg"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/ivAddTrailerType"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/add"
+                />
+            <Spinner
+                android:layout_toLeftOf="@+id/ivAddTrailerType"
+                android:layout_toStartOf="@+id/ivAddTrailerType"
+                android:id="@+id/spinnerListTypeOfTrailer"
+                style="@style/GLSpinnerTheme"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_below="@+id/trailerTypeCont"
+            style="@style/DividerTheme"/>
+        <!---->
+        <TextView
+            android:layout_below="@+id/trailerTypeCont"
+            android:text="@string/vehicle_number"
+            android:layout_width="150dp"
+            style="@style/GLLblBoldStyle" />
+        <RelativeLayout
+            android:id="@+id/vehicleNumberCont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/trailerTypeCont"
+            android:layout_toRightOf="@id/lblDNReceiveDateTime"
+            android:layout_toEndOf="@id/lblDNReceiveDateTime">
+            <ImageView
+                android:background="@drawable/edittext_bg"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/ivAddVehicleNumber"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/add"
+                />
+            <Spinner
+                android:layout_toLeftOf="@id/ivAddVehicleNumber"
+                android:layout_toStartOf="@+id/ivAddVehicleNumber"
+                android:id="@+id/spinnerListVehicleNumber"
+                style="@style/GLSpinnerTheme"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_below="@+id/vehicleNumberCont"
+            style="@style/DividerTheme"/>
+        <!---->
+        <TextView
+            android:layout_below="@+id/vehicleNumberCont"
+            android:text="Description"
+            android:layout_width="150dp"
+            style="@style/GLLblBoldStyle" />
+
+        <EditText
+            android:layout_below="@+id/vehicleNumberCont"
+            android:layout_toRightOf="@id/lblDNReceiveDateTime"
+            android:layout_toEndOf="@id/lblDNReceiveDateTime"
+            android:gravity="top|start"
+            android:inputType="textMultiLine"
+            android:id="@+id/etRemarkTruck"
+            style="@style/GLEditTextTheme"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Enter Description"
+            />
+        <View
+            android:layout_below="@+id/etRemarkTruck"
+            style="@style/DividerTheme"/>
+        <!---->
+
+
+
+        <TextView
+            android:layout_below="@+id/etRemarkTruck"
+            android:text="@string/offloading_dt"
+            android:layout_width="150dp"
+            style="@style/GLLblBoldStyle" />
+        <RelativeLayout
+            android:id="@+id/loadingDTCont"
+            android:layout_below="@+id/etRemarkTruck"
+            android:layout_toRightOf="@id/lblDNReceiveDateTime"
+            android:layout_toEndOf="@id/lblDNReceiveDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            >
+            <ImageView
+
+                android:background="@drawable/edittext_bg"
+                android:layout_toLeftOf="@+id/ivOffLoadingTime"
+                android:id="@+id/ivOffLoadingDate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/calender"
+                android:layout_margin="5dp"
+                android:padding="5dp"/>
+            <ImageView
+                android:background="@drawable/edittext_bg"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/ivOffLoadingTime"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/time"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                />
+            <LinearLayout
+                android:layout_below="@+id/ivOffLoadingDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+                <EditText
+
+                    android:id="@+id/etOffLoadingDate"
+                    android:enabled="false"
+                    android:focusable="false"
+                    style="@style/GLEditTextTheme"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="@string/select_offloading_date"
+                    />
+                <EditText
+                    android:id="@+id/etOffLoadingTime"
+                    style="@style/GLEditTextTheme"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="@string/select_offloading_time"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_below="@+id/loadingDTCont"
+            style="@style/DividerTheme"/>
+        <!---->
+
+        <TextView
+            android:layout_below="@+id/loadingDTCont"
+            android:text="@string/detention"
+            android:layout_width="150dp"
+            style="@style/GLLblBoldStyle" />
+        <LinearLayout
+            android:id="@+id/detentionCont"
+            android:layout_below="@+id/loadingDTCont"
+            android:layout_toRightOf="@id/lblDNReceiveDateTime"
+            android:layout_toEndOf="@id/lblDNReceiveDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:id="@+id/etDetention"
+                style="@style/GLEditTextTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:inputType="number"
+                android:hint="@string/enter_detention"
+                android:padding="5dp" />
+
+            <TextView
+                style="@style/GLLblNormalStyle"
+                android:text="Days"/>
+        </LinearLayout>
+
+        <View
+            android:layout_below="@+id/detentionCont"
+            style="@style/DividerTheme"/>
+        <!---->
+
+
+        <TextView
+
+            android:layout_below="@+id/detentionCont"
+            android:text="@string/status"
+            android:layout_width="150dp"
+            style="@style/GLLblBoldStyle"
+            />
+        <RelativeLayout
+            android:id="@+id/truckStatusCont"
+            android:layout_below="@+id/detentionCont"
+            android:layout_toRightOf="@id/lblDNReceiveDateTime"
+            android:layout_toEndOf="@id/lblDNReceiveDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:background="@drawable/edittext_bg"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/ivAddTruckStatus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/add"
+                />
+            <Spinner
+                android:layout_toLeftOf="@+id/ivAddTruckStatus"
+                android:layout_toStartOf="@+id/ivAddTruckStatus"
+                android:id="@+id/spinnerListTrucksStatus"
+                style="@style/GLSpinnerTheme"
+
+                />
+
+        </RelativeLayout>
+        <View
+            android:layout_below="@+id/truckStatusCont"
+            style="@style/DividerTheme"/>
+        <!---->
+        <TextView
+            android:layout_below="@+id/truckStatusCont"
+            android:text="Current Location"
+            style="@style/GLLblBoldStyle"
+            android:layout_width="150dp"/>
+        <EditText
+            android:layout_below="@+id/truckStatusCont"
+            android:layout_toRightOf="@+id/lblDNReceiveDateTime"
+            android:layout_toEndOf="@+id/lblDNReceiveDateTime"
+            android:id="@+id/etTruckCurrentLocation"
+            android:hint="Enter Current Location"
+            style="@style/GLEditTextTheme"
+            />
+        <View
+            android:layout_below="@+id/etTruckCurrentLocation"
+            style="@style/DividerTheme"/>
+
+        <!---->
+        <TextView
+            android:layout_below="@+id/etTruckCurrentLocation"
+            android:id="@id/lblDNReceiveDateTime"
+            android:layout_width="150dp"
+            android:text="@string/d_n_receive_dt"
+            style="@style/GLLblBoldStyle"/>
+        <RelativeLayout
+            android:id="@+id/DNoteReceivedDateCont"
+            android:layout_toRightOf="@+id/lblDNReceiveDateTime"
+            android:layout_below="@+id/etTruckCurrentLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <ImageView
+
+                android:background="@drawable/edittext_bg"
+                android:layout_toLeftOf="@+id/ivDeliveryNoteReceivedTime"
+                android:layout_toStartOf="@+id/ivDeliveryNoteReceivedTime"
+                android:id="@+id/ivDeliveryNoteReceivedDate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/calender"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                />
+            <ImageView
+                android:background="@drawable/edittext_bg"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/ivDeliveryNoteReceivedTime"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/time"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                />
+            <LinearLayout
+                android:layout_below="@+id/ivDeliveryNoteReceivedTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+                <EditText
+
+                    android:id="@+id/etDeliveryNoteReceivedDate"
+                    style="@style/GLEditTextTheme"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:hint="@string/select_dn_received_date"
+                    />
+                <EditText
+                    android:id="@+id/etDeliveryNoteReceivedTime"
+                    style="@style/GLEditTextTheme"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:hint="@string/select_dn_received_time"
+                    />
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_below="@+id/DNoteReceivedDateCont"
+            style="@style/DividerTheme"/>
+
+        <!---->
+
+
+        <TextView
+
+            android:layout_below="@+id/DNoteReceivedDateCont"
+            android:text="Currency Code"
+            android:layout_width="150dp"
+            style="@style/GLLblBoldStyle"
+            />
+
+        <Spinner
+            android:layout_toRightOf="@+id/lblOurPrice"
+            android:layout_below="@+id/DNoteReceivedDateCont"
+            android:id="@+id/spinnerListCurrencyCode"
+            style="@style/GLSpinnerTheme"
+
+            />
+        <View
+            android:layout_below="@+id/spinnerListCurrencyCode"
+            style="@style/DividerTheme"/>
+
+        <!---->
+
+        <TextView
+            android:layout_below="@+id/spinnerListCurrencyCode"
+            android:id="@+id/lblOurPrice"
+            android:layout_width="150dp"
+            android:text="@string/our_price_to_customer"
+
+            style="@style/GLLblBoldStyle" />
+
+        <EditText
+            android:layout_below="@+id/spinnerListCurrencyCode"
+            android:layout_toRightOf="@+id/lblOurPrice"
+            android:layout_toEndOf="@+id/lblOurPrice"
+            style="@style/GLEditTextTheme"
+            android:id="@+id/etOurPriceToCustomer"
+            android:layout_width="match_parent"
+            android:inputType="numberDecimal"
+            android:hint="@string/enter_our_price"
+            android:maxLines="1" />
+        <View
+            android:layout_below="@+id/etOurPriceToCustomer"
+            style="@style/DividerTheme"/>
+
+        <TextView
+            android:layout_below="@+id/etOurPriceToCustomer"
+            android:layout_width="150dp"
+            android:text="@string/our_cost"
+            style="@style/GLLblBoldStyle"/>
+
+
+        <EditText
+            android:layout_below="@+id/etOurPriceToCustomer"
+            android:layout_toRightOf="@+id/lblOurPrice"
+            android:layout_toEndOf="@+id/lblOurPrice"
+            style="@style/GLEditTextTheme"
+            android:id="@+id/etOurCost"
+            android:layout_width="match_parent"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:hint="@string/enter_our_cost"
+            />
+
+        <View
+            android:layout_below="@+id/etOurCost"
+            style="@style/DividerTheme"/>
+        <TextView
+            android:layout_below="@+id/etOurCost"
+            android:layout_width="150dp"
+            android:text="Advance"
+            style="@style/GLLblBoldStyle"/>
+        <EditText
+            android:layout_below="@+id/etOurCost"
+            android:layout_toRightOf="@+id/lblOurPrice"
+            android:layout_toEndOf="@+id/lblOurPrice"
+            style="@style/GLEditTextTheme"
+            android:id="@+id/etAdvance"
+            android:layout_width="match_parent"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:hint="@string/enter_advance"
+            />
+        <View
+            android:layout_below="@+id/etAdvance"
+            style="@style/DividerTheme"/>
+
+        <!---->
+        <TextView
+            android:layout_below="@+id/etAdvance"
+            android:text="Detention Rate"
+            android:layout_width="150dp"
+            style="@style/GLLblBoldStyle" />
+
+
+        <EditText
+            android:id="@+id/etDetentionRate"
+            style="@style/GLEditTextTheme"
+            android:layout_toRightOf="@+id/lblOurPrice"
+            android:layout_below="@+id/etAdvance"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:inputType="number"
+            android:hint="@string/enter_detention_rate"
+            android:padding="5dp" />
+
+
+
+        <View
+            android:layout_below="@+id/etDetentionRate"
+            style="@style/DividerTheme"/>
+        <!---->
+        <TextView
+            android:layout_below="@+id/etDetentionRate"
+            android:layout_width="150dp"
+            android:text="Balance"
+            style="@style/GLLblBoldStyle"/>
+        <EditText
+            android:layout_below="@+id/etDetentionRate"
+            android:layout_toRightOf="@+id/lblOurPrice"
+            android:layout_toEndOf="@+id/lblOurPrice"
+            style="@style/GLEditTextTheme"
+            android:id="@+id/etBalance"
+            android:layout_width="match_parent"
+            android:focusable="false"
+            android:inputType="numberDecimal"
+            android:enabled="false"
+            android:maxLines="1"
+            android:hint="@string/balance"
+
+            />
+
+        <View
+            android:layout_below="@+id/etBalance"
+            style="@style/DividerTheme"/>
+
+        <TextView
+            android:id="@+id/lblBorderCharge"
+            android:layout_below="@+id/etBalance"
+            android:layout_width="150dp"
+            android:text="Border Charge"
+            style="@style/GLLblBoldStyle"/>
+        <EditText
+            android:layout_below="@+id/etBalance"
+            android:layout_toRightOf="@+id/lblOurPrice"
+            android:layout_toEndOf="@+id/lblOurPrice"
+            style="@style/GLEditTextTheme"
+            android:id="@+id/etBorderCharge"
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:inputType="numberDecimal"
+            android:hint="@string/enter_border_charge"
+            />
+
+        <View
+            android:id="@+id/separatorBorderCharge"
+            android:layout_below="@+id/etBorderCharge"
+            style="@style/DividerTheme"/>
+
+        <TextView
+            android:id="@+id/lblBalancePaid"
+            android:layout_below="@+id/etBorderCharge"
+            android:layout_width="150dp"
+            android:text="Balance Paid"
+            style="@style/GLLblBoldStyle"/>
+        <LinearLayout
+            android:id="@+id/balanceStatusCont"
+            android:layout_below="@+id/etBorderCharge"
+            android:layout_toRightOf="@+id/lblOurPrice"
+            android:layout_toEndOf="@+id/lblOurPrice"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:padding="5dp"
+
+            >
+            <TextView
+
+                android:id="@+id/tvBalancePaidYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Yes"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/yesno_bg"
+                />
+            <TextView
+                android:id="@+id/tvBalancePaidNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="No"
+                android:background="@drawable/yesno_bg"/>
+        </LinearLayout>
+        <View
+            android:id="@+id/separatorBalanceStatus"
+            android:layout_below="@+id/balanceStatusCont"
+            style="@style/DividerTheme"/>
+
+
+
+        <GridLayout
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/balanceStatusCont"
+            android:layout_margin="20dp"
+            android:id="@+id/doc_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:columnCount="2">
+        </GridLayout>
+
+        <TextView
+            android:layout_below="@+id/doc_container"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btn_add_document"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#aa893a"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:drawableLeft="@drawable/doc_upload"
+            android:drawablePadding="10dp"
+            android:text="Add Documents"
+            android:textColor="#d9d9d9"
+            android:layout_marginBottom="20dp"
+            />
+        <TextView
+            android:layout_below="@+id/btn_add_document"
+            android:id="@+id/btn_submit_truck"
+            android:layout_width="wrap_content"
+            style="@style/GLButtonMarigold"
+
+            android:text="Submit Truck Detail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            />
+        <!-- <LinearLayout
+             android:layout_below="@+id/btn_add_document"
+             android:layout_centerHorizontal="true"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal">
+             <TextView
+                 android:id="@+id/btn_cancel"
+                 android:layout_width="wrap_content"
+                 style="@style/GLButtonMarigold"
+                 android:text="@string/cancel"
+                 android:layout_marginRight="5dp"
+
+                 />
+
+         </LinearLayout>-->
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
+

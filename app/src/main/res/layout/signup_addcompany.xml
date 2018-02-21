@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gl_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="78dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:gravity="center_horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/truck_tab_bg">
+                <ImageView
+                    android:id="@+id/imageCompany"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/circledefault"/>
+                <TextView
+                    android:id="@+id/tvUploadCompanyImg"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#c0000000"
+                    android:textColor="#fff"
+                    android:text="Upload Image"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txt_compNamee"
+                    style="@style/GLAppEditTextTheme"
+                    android:hint="@string/cmp_txt" />
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/et_firstname"
+                style="@style/GLAppEditTextTheme"
+                android:hint="First Name" />
+
+
+            <EditText
+                android:id="@+id/et_lastName"
+
+                style="@style/GLAppEditTextTheme"
+                android:hint="Last Name" />
+
+            <EditText
+                android:id="@+id/et_emailAddress"
+                style="@style/GLAppEditTextTheme"
+                android:hint="@string/email_txt" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:gravity="center_vertical">
+                <EditText
+                    android:drawableLeft="@drawable/plus"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/et_CountryCode"
+                    android:hint="Code"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.1"
+                    style="@style/GLAppEditTextTheme"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:textColor="#fff"
+                    android:text="-"/>
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:hint="Mobile Number"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.9"
+                    style="@style/GLAppEditTextTheme"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    />
+
+            </LinearLayout>
+
+
+
+            <EditText
+                android:id="@+id/et_designation"
+                style="@style/GLAppEditTextTheme"
+
+                android:hint="Designation" />
+
+
+            <EditText
+                android:id="@+id/et_username"
+                style="@style/GLAppEditTextTheme"
+
+                android:hint="User Name" />
+
+            <EditText
+                android:id="@+id/et_password"
+                style="@style/GLAppEditTextTheme"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/txt_exit"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btnwhiterectangle"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Cancel"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_submit"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/btnwhiterectangle"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Submit"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

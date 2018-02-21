@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    >
+
+    <EditText
+        android:id="@+id/etQuoteId"
+        style="@style/GLAppEditTextTheme"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:hint="@string/quote_id"
+        />
+
+
+    <EditText
+        android:id="@+id/etClientCompName"
+        style="@style/GLAppEditTextTheme"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:hint="@string/company_name"/>
+
+
+    <LinearLayout
+        android:id="@+id/dateContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        >
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/ivFromDate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/calender" />
+            <EditText
+                android:layout_toLeftOf="@+id/ivFromDate"
+                android:layout_toStartOf="@+id/ivFromDate"
+                android:id="@+id/etFromDate"
+                style="@style/GLAppEditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:focusable="false"
+                android:hint="@string/from"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/ivToDate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/calender"
+                />
+            <EditText
+                android:layout_toLeftOf="@+id/ivToDate"
+                android:layout_toStartOf="@id/ivToDate"
+                android:id="@+id/etToDate"
+                style="@style/GLAppEditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:focusable="false"
+                android:hint="@string/to"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/spinnerListQuoteStatus"
+        style="@style/GLAPPSpinnerTheme"
+        />
+
+
+    <!-- </TableRow>
+
+     <TableRow
+         android:gravity="center"
+         android:paddingTop="10dp">-->
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/tvQuoteSearch"
+        android:layout_width="match_parent"
+        style="@style/GLButtonMarigold"
+        android:drawableRight="@drawable/search_icon"
+        android:text="Search"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="10dp"
+        />
+    <View
+        style="@style/DividerTheme"/>
+    <!-- </TableRow>-->
+</LinearLayout>
+
+

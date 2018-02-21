@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+
+    >
+
+    <ImageView
+        android:id="@+id/imageicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/quote_list_icon" />
+    <ImageView
+        android:id="@+id/ivNextArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:padding="5dp"
+        android:background="@drawable/next_arrow"/>
+
+    <TextView
+        android:id="@+id/tvQuoteClientName"
+        android:layout_toRightOf="@+id/imageicon"
+        android:layout_toLeftOf="@+id/ivNextArrow"
+        android:layout_width="match_parent"
+        android:padding="0dp"
+        android:layout_margin="0dp"
+        android:text="Ask Online Solution"
+       style="@style/GLLblBoldStyle"/>
+    <TextView
+        android:id="@+id/tvQuoteCreatedDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#d9d9d9"
+        android:layout_below="@+id/tvQuoteClientName"
+        android:layout_toRightOf="@+id/imageicon"
+        android:layout_toLeftOf="@+id/ivNextArrow"
+        android:textSize="16sp"
+        android:paddingTop="5dp"
+        android:text="Phone"/>
+    <TextView
+        android:id="@+id/tvQuoteCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#d9d9d9"
+        android:layout_below="@+id/tvQuoteCreatedDate"
+        android:layout_toRightOf="@+id/imageicon"
+        android:layout_toLeftOf="@+id/ivNextArrow"
+        android:textSize="16sp"
+        android:paddingTop="5dp"
+        android:text="Client Id"/>
+
+
+
+</RelativeLayout>
+
+
+
+
+
+

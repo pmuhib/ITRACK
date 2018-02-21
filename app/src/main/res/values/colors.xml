@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2e373e</color>
+    <color name="colorPrimaryDark">#e1000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="orange">#e7c608</color>
+    <color name="black">#000000</color>
+    <color name="gl_background">#21282d</color>
+    <color name="gl_dashboard_bg">#B8860B</color>
+    <color name="gl_dashboard_bg_white">#FFFFFF</color>
+    <color name="gl_et_background">#4e4e50</color>
+    <color name="gl_toolbar">#000</color>
+    <color name="gl_shadow">#060b11</color>
+    <color name="gl_bottom_bar">#2e373e</color>
+    <color name="gl_dd_txt_color">#a2a6a9</color>
+    <color name="gl_lbl_bold_txt_color">#f8c561</color>
+    <color name="gl_tab_selected_color">#c89a3c</color>
+    <color name="gl_tab_host_bg_color">#2e373e</color>
+    <color name="gl_dft_separator_color">#505761</color>
+    <color name="gl_dft_header_footer_heading_color">#999999</color>
+
+</resources>

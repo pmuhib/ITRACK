@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_below="@+id/dsr_tabbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/heading_gen_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gen_info"
+        android:textSize="17sp"
+        android:padding="10dp"
+        style="@style/GLTabStyle"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:id="@+id/btn_next_submit_dsr"
+        android:layout_width="wrap_content"
+        style="@style/GLButtonMarigold"
+        android:text="View Trucks Details"
+        />
+    <ScrollView
+        android:id="@+id/scrollVGenDSR"
+        android:layout_below="@+id/heading_gen_info"
+        android:layout_above="@+id/btn_next_submit_dsr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <TextView
+                android:text="@string/client"
+                style="@style/GLLblBoldStyle"
+                />
+            <TextView
+                android:layout_toRightOf="@+id/lblDestinationPoint"
+                android:layout_toEndOf="@+id/lblDestinationPoint"
+                android:id="@+id/tvClientCompName"
+                style="@style/GLLblNormalStyle"
+                />
+
+            <View
+                android:layout_below="@+id/tvClientCompName"
+                style="@style/DividerTheme"/>
+
+            <TextView
+
+                android:layout_below="@+id/tvClientCompName"
+                android:text="@string/dsr_ref_no"
+                style="@style/GLLblBoldStyle"
+                />
+            <TextView
+
+                android:id="@+id/tvDsrRefNum"
+                android:layout_below="@+id/tvClientCompName"
+                android:layout_toRightOf="@+id/lblDestinationPoint"
+                android:layout_toEndOf="@+id/lblDestinationPoint"
+                style="@style/GLLblNormalStyle"
+                />
+
+            <View
+                android:layout_below="@+id/tvDsrRefNum"
+                style="@style/DividerTheme"/>
+
+            <TextView
+                android:layout_below="@+id/tvDsrRefNum"
+                android:text="@string/dsr_date_time"
+                style="@style/GLLblBoldStyle"
+                />
+            <TextView
+
+                android:id="@+id/tvDSRDateTime"
+                android:layout_below="@+id/tvDsrRefNum"
+                android:layout_toRightOf="@+id/lblDestinationPoint"
+                android:layout_toEndOf="@+id/lblDestinationPoint"
+                style="@style/GLLblNormalStyle"
+                />
+
+            <View
+                android:layout_below="@+id/tvDSRDateTime"
+                style="@style/DividerTheme"/>
+<!---->
+            <TextView
+                android:text="Client Ref #"
+                style="@style/GLLblBoldStyle"
+                android:layout_below="@+id/tvDSRDateTime"
+                />
+            <TextView
+                android:id="@+id/tvClientCompRefNum"
+                android:layout_below="@+id/tvDSRDateTime"
+                android:layout_toRightOf="@+id/lblDestinationPoint"
+                android:layout_toEndOf="@+id/lblDestinationPoint"
+                style="@style/GLLblNormalStyle"
+                />
+            <View
+                android:layout_below="@+id/tvClientCompRefNum"
+                style="@style/DividerTheme"/>
+<!---->
+
+            <TextView
+
+                android:text="# of Trucks"
+                style="@style/GLLblBoldStyle"
+                android:layout_below="@+id/tvClientCompRefNum"
+                />
+            <TextView
+
+                android:id="@+id/tvNoOfTrucks"
+                android:layout_below="@+id/tvClientCompRefNum"
+                android:layout_toRightOf="@+id/lblDestinationPoint"
+                android:layout_toEndOf="@+id/lblDestinationPoint"
+                style="@style/GLLblNormalStyle"
+                />
+
+            <View
+                android:layout_below="@+id/tvNoOfTrucks"
+                style="@style/DividerTheme"/>
+
+            <!---->
+            <TextView
+                android:text="Loading Date"
+                style="@style/GLLblBoldStyle"
+                android:layout_below="@+id/tvNoOfTrucks"
+                />
+            <TextView
+
+                android:id="@+id/tvLoadingDate"
+                android:layout_below="@+id/tvNoOfTrucks"
+                android:layout_toRightOf="@+id/lblDestinationPoint"
+                android:layout_toEndOf="@+id/lblDestinationPoint"
+                style="@style/GLLblNormalStyle"
+                />
+
+            <View
+                android:layout_below="@+id/tvLoadingDate"
+                style="@style/DividerTheme"/>
+
+            <TextView
+                android:text="ETA"
+                style="@style/GLLblBoldStyle"
+                android:layout_below="@+id/tvLoadingDate"
+                />
+            <TextView
+
+                android:id="@+id/tvETA"
+                android:layout_below="@+id/tvLoadingDate"
+                android:layout_toRightOf="@+id/lblDestinationPoint"
+                android:layout_toEndOf="@+id/lblDestinationPoint"
+                style="@style/GLLblNormalStyle"
+                />
+
+            <View
+                android:layout_below="@+id/tvETA"
+                style="@style/DividerTheme"/>
+<!---->
+            <TextView
+                android:visibility="invisible"
+                android:text="TT"
+                style="@style/GLLblBoldStyle"
+                android:layout_below="@+id/tvETA"
+                />
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/tvTT"
+                android:layout_below="@+id/tvETA"
+                android:layout_toRightOf="@+id/lblDestinationPoint"
+                android:layout_toEndOf="@+id/lblDestinationPoint"
+                style="@style/GLLblNormalStyle"
+                />
+
+            <View
+                android:visibility="invisible"
+                android:layout_below="@+id/tvTT"
+                style="@style/DividerTheme"/>
+
+<!---->
+            <TextView
+                android:text="Loading Point"
+                style="@style/GLLblBoldStyle"
+                android:layout_below="@+id/tvETA"
+                />
+            <TextView
+
+                android:id="@+id/tvLoadingPoint"
+                android:layout_below="@+id/tvETA"
+                android:layout_toRightOf="@+id/lblDestinationPoint"
+                android:layout_toEndOf="@+id/lblDestinationPoint"
+                style="@style/GLLblNormalStyle"
+                />
+
+            <View
+                android:layout_below="@+id/tvLoadingPoint"
+                style="@style/DividerTheme"/>
+
+
+            <TextView
+                android:id="@+id/lblDestinationPoint"
+
+                android:text="Destination Point"
+                style="@style/GLLblBoldStyle"
+                android:layout_below="@+id/tvLoadingPoint"
+                />
+            <TextView
+                android:id="@+id/tvDestinationPoint"
+                android:layout_below="@+id/tvLoadingPoint"
+                android:layout_toRightOf="@+id/lblDestinationPoint"
+                android:layout_toEndOf="@+id/lblDestinationPoint"
+                style="@style/GLLblNormalStyle"
+                />
+
+            <View
+                android:layout_below="@+id/tvDestinationPoint"
+                style="@style/DividerTheme"/>
+
+
+            <TextView
+
+                android:text="Customs"
+                style="@style/GLLblBoldStyle"
+                android:layout_below="@+id/tvDestinationPoint"
+                />
+            <TextView
+
+                android:id="@+id/tvCustoms"
+                android:layout_below="@+id/tvDestinationPoint"
+                android:layout_toRightOf="@+id/lblDestinationPoint"
+                android:layout_toEndOf="@+id/lblDestinationPoint"
+                style="@style/GLLblNormalStyle"
+                />
+
+            <View
+                android:layout_below="@+id/tvCustoms"
+                style="@style/DividerTheme"/>
+            <!---->
+
+
+
+            <TextView
+                android:text="@string/eta_customs"
+                style="@style/GLLblBoldStyle"
+                android:layout_below="@+id/tvCustoms"
+                />
+            <TextView
+
+                android:id="@+id/tvDateReachedCustom"
+                android:layout_below="@+id/tvCustoms"
+                android:layout_toRightOf="@+id/lblDestinationPoint"
+                android:layout_toEndOf="@+id/lblDestinationPoint"
+                style="@style/GLLblNormalStyle"
+                />
+
+            <View
+                android:layout_below="@+id/tvDateReachedCustom"
+                style="@style/DividerTheme"/>
+            <TextView
+                android:layout_below="@+id/tvDateReachedCustom"
+                android:text="@string/remark"
+                style="@style/GLLblBoldStyle"
+                />
+            <TextView
+                android:id="@+id/tvRemark"
+                android:layout_below="@+id/tvDateReachedCustom"
+                android:layout_toRightOf="@+id/lblDestinationPoint"
+                android:layout_toEndOf="@+id/lblDestinationPoint"
+                style="@style/GLLblNormalStyle"
+                />
+
+            <View
+                android:layout_below="@+id/tvRemark"
+                style="@style/DividerTheme"/>
+
+            <!---->
+
+            <TextView
+                android:visibility="gone"
+                android:text="Status"
+                style="@style/GLLblBoldStyle"
+                android:layout_below="@+id/tvRemark"
+                />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tvStatusDSR"
+                android:layout_below="@+id/tvRemark"
+                android:layout_toRightOf="@+id/lblDestinationPoint"
+                android:layout_toEndOf="@+id/lblDestinationPoint"
+                style="@style/GLLblNormalStyle"
+                />
+
+            <View
+                android:visibility="gone"
+                android:layout_below="@+id/tvStatusDSR"
+                style="@style/DividerTheme"/>
+
+        <!---->
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

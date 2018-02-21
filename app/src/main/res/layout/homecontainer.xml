@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/drawer_layout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/toolbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="#333333">
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:elevation="5dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/homecontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_home">
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
+
+<LinearLayout
+    android:layout_width="200dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="#99000000"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+
+
+    <!--<android.support.v7.widget.RecyclerView
+        android:id="@+id/menuItemList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:scrollbars="none" />-->
+
+    <ExpandableListView
+        android:id="@+id/drawar_list"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:groupIndicator="@null"
+        >
+    </ExpandableListView>
+
+</LinearLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

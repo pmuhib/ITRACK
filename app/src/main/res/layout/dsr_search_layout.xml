@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingLeft="40dp"
+    android:paddingStart="40dp"
+    android:paddingRight="40dp"
+    android:paddingEnd="40dp"
+    >
+
+    <EditText
+        android:id="@+id/etDSRRefNum"
+        style="@style/GLAppEditTextTheme"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="@string/dsr_number"
+        />
+
+
+    <EditText
+        android:id="@+id/etClientCompName"
+        style="@style/GLAppEditTextTheme"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="@string/company_name"/>
+
+    <EditText
+        android:id="@+id/etTruckDriverName"
+        style="@style/GLAppEditTextTheme"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+
+        android:hint="@string/driver_name"/>
+    <EditText
+        android:id="@+id/etVehicleNumber"
+        style="@style/GLAppEditTextTheme"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+
+        android:hint="@string/vehicle_number"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/autocompleteTVLoadingPoint"
+        android:layout_width="match_parent"
+        style="@style/GLAutoTextViewTheme"
+
+        android:ems="10"
+        android:hint="Loading Point"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:completionThreshold="1"
+        />
+
+    <LinearLayout
+        android:id="@+id/dateContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+
+        >
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/ivFromDate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/calender" />
+            <EditText
+                android:layout_toLeftOf="@+id/ivFromDate"
+                android:layout_toStartOf="@+id/ivFromDate"
+                android:id="@+id/etFromDate"
+                style="@style/GLAppEditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:focusable="false"
+                android:hint="@string/from"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/ivToDate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/calender"
+                />
+            <EditText
+                android:layout_toLeftOf="@+id/ivToDate"
+                android:layout_toStartOf="@id/ivToDate"
+                android:id="@+id/etToDate"
+                style="@style/GLAppEditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:focusable="false"
+                android:hint="@string/to"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <!-- </TableRow>
+
+     <TableRow android:gravity="center_vertical"
+         android:id="@+id/dsr_filter_view">-->
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/spinnerListBalancePaid"
+        style="@style/GLSpinnerTheme"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/spinnerListStatus"
+        style="@style/GLSpinnerTheme"
+        />
+
+
+    <!-- </TableRow>
+
+     <TableRow
+         android:gravity="center"
+         android:paddingTop="10dp">-->
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/tvDSRSearch"
+        android:layout_width="wrap_content"
+        style="@style/GLButtonMarigold"
+        android:drawableRight="@drawable/search_icon"
+       android:drawablePadding="10dp"
+        android:text="Search"
+        android:textSize="20sp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="end"
+        />
+    <View
+        style="@style/DividerTheme"/>
+    <!-- </TableRow>-->
+</LinearLayout>

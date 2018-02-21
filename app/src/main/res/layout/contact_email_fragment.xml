@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+   >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="10dp"
+        android:background="#333333">
+
+
+        <TextView
+            android:text="Name"
+            style="@style/GLLblBoldStyle"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_height="30dp"
+            style="@style/GLAppEditTextTheme"
+            android:layout_toRightOf="@+id/lblMessage"
+            android:layout_toEndOf="@+id/lblMessage"/>
+
+        <TextView
+            android:layout_below="@+id/etName"
+            android:text="Email"
+            style="@style/GLLblBoldStyle"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_height="30dp"
+            style="@style/GLAppEditTextTheme"
+            android:layout_below="@+id/etName"
+            android:layout_toRightOf="@+id/lblMessage"
+            android:layout_toEndOf="@+id/lblMessage"/>
+
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_below="@+id/etEmail"
+            android:id="@+id/lblMessage"
+            android:text="@string/message"
+            style="@style/GLLblBoldStyle"/>
+
+        <EditText
+            android:id="@+id/etMessageBody"
+            style="@style/GLAppEditTextTheme"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/etEmail"
+            android:layout_toRightOf="@+id/lblMessage"
+            android:layout_toEndOf="@+id/lblMessage"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:singleLine="false" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etMessageBody"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+          >
+
+            <TextView
+                android:id="@+id/tvSendContactMail"
+                android:layout_width="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                style="@style/GLButtonMarigold"
+                android:text="@string/send"
+                android:textSize="14sp"
+
+                />
+
+            <TextView
+                android:id="@+id/tvCancelMessageSend"
+                android:layout_width="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                style="@style/GLButtonMarigold"
+                android:textSize="14sp"
+                android:text="@string/cancel"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

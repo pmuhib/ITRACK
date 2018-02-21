@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:background="?attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/newsNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:text="Hello"
+        android:textColor="@color/gl_lbl_bold_txt_color"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="top"
+        android:orientation="horizontal">
+        <com.client.itrack.utility.CircleImageView
+            android:id="@+id/imageicon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:src="@drawable/circledefault" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:id="@+id/lblDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date : "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/gl_lbl_bold_txt_color"
+                />
+            <TextView
+                android:layout_toRightOf="@+id/lblDate"
+                android:id="@+id/mdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date :10-04-2016"
+                android:textSize="18sp"
+                android:textColor="#d9d9d9"/>
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#a2a6a9"
+                android:layout_below="@+id/mdate"
+                android:textSize="16sp"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:text="kages and web page editors now use Lorem Ipsum as their default model text, and a search for \\'lorem ipsum\\' will uncover "/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

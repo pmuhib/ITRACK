@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gl_background"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/employeeSearchContainer"
+        layout="@layout/client_employee_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/companyLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/circledefault"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerInParent="true"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listClientEmployees"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="left"
+            android:layout_marginBottom="50dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+
+            android:layout_gravity="bottom"
+            android:background="@color/gl_bottom_bar">
+            <RelativeLayout
+                android:id="@+id/bottombar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <ImageView
+                    android:id="@+id/addicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/plus_bottom_icon"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_alignParentLeft="true"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/navigation_dot_icon"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:visibility="gone"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_alignParentRight="true"/>
+
+                <ImageView
+                    android:id="@+id/ivSearchEmployee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/search_icon"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

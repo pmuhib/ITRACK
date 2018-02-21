@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gl_background"
+   >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="2dp"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cmplogo_txt"
+                    android:textColorHint="#A1B3BC"
+                    android:paddingLeft="10dp"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff" />
+
+
+
+                <RelativeLayout
+                    android:id="@+id/etxt_cmplogo"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle"
+                    >
+                    <ImageView
+                        android:id="@+id/iconupload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/icon_upload"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="2dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:background="@drawable/rectangle"
+            >
+
+
+            <EditText
+                android:id="@+id/etxt_companyName"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:hint="@string/cmp_txt"
+                android:paddingLeft="10dp"
+                android:textColorHint="#A1B3BC"
+                android:background="@null"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="2dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:background="@drawable/rectangle"
+        >
+
+
+
+        <EditText
+            android:id="@+id/etxt_firstAddress"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:hint="@string/address1_txt"
+            android:textColorHint="#A1B3BC"
+            android:background="@null"
+            android:textColor="#ffffff" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="2dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:background="@drawable/rectangle"
+        >
+
+
+
+        <EditText
+            android:id="@+id/etxt_secondAddress"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:textColorHint="#A1B3BC"
+            android:textColor="#ffffff"
+            android:background="@null"
+            android:hint="@string/address2_txt"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="2dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:background="@drawable/rectangle"
+        >
+
+
+
+        <RelativeLayout
+            android:id="@+id/etxt_countryname"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+         >
+            <Spinner
+                android:id="@+id/country_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:popupBackground="#214B60"/>
+            </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="2dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:background="@drawable/rectangle"
+        >
+
+
+
+        <RelativeLayout
+            android:id="@+id/etxt_stateName"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+           >
+
+            <Spinner
+                android:id="@+id/state_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:popupBackground="#214B60"/>
+
+            </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="2dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:background="@drawable/rectangle"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/etxt_cityName"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            >
+
+            <Spinner
+                android:id="@+id/city_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:popupBackground="#214B60"/>
+
+
+            </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="@drawable/rectangle"
+        >
+
+
+
+        <EditText
+            android:id="@+id/etxt_zipCode"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:hint="@string/zipcode_txt"
+            android:paddingLeft="10dp"
+            android:textColorHint="#A1B3BC"
+            android:background="@null"
+            android:textColor="#ffffff"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="2dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:background="@drawable/rectangle"
+        >
+
+
+
+        <EditText
+            android:id="@+id/etxt_phone"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:hint="@string/phone_txt"
+            android:paddingLeft="10dp"
+            android:background="@null"
+            android:textColorHint="#A1B3BC"
+            android:textColor="#ffffff" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="2dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:background="@drawable/rectangle"
+        >
+
+
+
+        <EditText
+            android:id="@+id/etxt_emailAddress"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:hint="@string/email_txt"
+            android:paddingLeft="10dp"
+            android:textColorHint="#A1B3BC"
+            android:background="@null"
+            android:textColor="#ffffff" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="2dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:background="@drawable/rectangle"
+        >
+
+
+        <EditText
+            android:id="@+id/etxt_fax"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:hint="@string/fax_txt"
+            android:paddingLeft="10dp"
+            android:textColorHint="#A1B3BC"
+            android:background="@null"
+            android:textColor="#ffffff" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="78dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:background="@drawable/rectangle"
+        >
+
+
+        <EditText
+            android:id="@+id/etxt_domain"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:hint="@string/domain_txt"
+            android:paddingLeft="10dp"
+            android:textColorHint="#A1B3BC"
+
+            android:background="@null"
+            android:textColor="#ffffff" />
+
+
+    </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/txt_cancel"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:padding="5dp"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:background="@drawable/btnwhiterectangle"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/txt_next"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:padding="5dp"
+            android:layout_alignParentRight="true"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:background="@drawable/btnwhiterectangle"
+            android:gravity="center"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

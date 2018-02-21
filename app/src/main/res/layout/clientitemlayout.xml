@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+
+    >
+
+    <TextView
+        android:id="@+id/tvClientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ambey"
+        android:layout_margin="5dp"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="#f8c561"/>
+
+    <com.client.itrack.utility.CircleImageView
+
+        android:layout_below="@+id/tvClientName"
+        android:id="@+id/imageicon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/circledefault" />
+    <ImageView
+        android:id="@+id/ivNextArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:padding="5dp"
+        android:background="@drawable/next_arrow"/>
+
+    <TextView
+        android:id="@+id/tvClientEmail"
+        android:layout_below="@+id/tvClientName"
+        android:layout_toRightOf="@+id/imageicon"
+        android:layout_toLeftOf="@+id/ivNextArrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Email"
+        android:textSize="16sp"
+       android:paddingTop="5dp"
+
+        android:textColor="#d9d9d9"/>
+    <TextView
+        android:id="@+id/tvClientPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#d9d9d9"
+        android:layout_below="@+id/tvClientEmail"
+        android:layout_toRightOf="@+id/imageicon"
+        android:layout_toLeftOf="@+id/ivNextArrow"
+        android:textSize="16sp"
+        android:paddingTop="5dp"
+        android:text="Phone"/>
+    <TextView
+        android:id="@+id/tvClientCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#d9d9d9"
+        android:layout_below="@+id/tvClientPhone"
+        android:layout_toRightOf="@+id/imageicon"
+        android:layout_toLeftOf="@+id/ivNextArrow"
+        android:textSize="16sp"
+        android:paddingTop="5dp"
+        android:text="Client Id"/>
+
+
+
+</RelativeLayout>
+
+
+
+
+
+

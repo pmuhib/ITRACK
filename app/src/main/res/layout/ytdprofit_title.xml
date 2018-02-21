@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linear_1"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="@drawable/dft_item_bg"        >
+        <LinearLayout
+            android:layout_weight="0.50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DSR Ref No"
+                style="@style/GLLblBoldStyleLargeGold"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DSR Net Profit"
+                style="@style/GLLblBoldStyleLargeGold"
+                android:padding="2dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="0.50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+            <TextView
+                android:id="@+id/txt_refno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GLP079611955"
+                style="@style/GLLblBoldStyleLargeGold"
+                android:padding="2dp"/>
+            <TextView
+                android:id="@+id/txt_netprofit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AED 8"
+                style="@style/GLLblBoldStyleLargeGold"
+                android:padding="2dp"/>
+        </LinearLayout>
+</LinearLayout>
+</LinearLayout>

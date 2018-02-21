@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dashboard_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_above="@+id/dbIconCont2"
+        android:layout_height="125dp"
+        android:id="@+id/dbIconCont1"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:layout_width="match_parent"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/toolslayout"
+            style="@style/GLDashboardButtonStyle"
+            >
+            <ImageView
+                android:src="@drawable/tools"
+                style="@style/GLDashboardIcnStyle"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/businessForumLayout"
+            style="@style/GLDashboardButtonStyle"
+            >
+            <ImageView
+                android:src="@drawable/business_forum"
+                style="@style/GLDashboardIcnStyle"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/socialMediaLayout"
+            style="@style/GLDashboardButtonStyle"
+            >
+            <ImageView
+                android:id="@+id/img_ytdimg"
+                android:src="@drawable/social_media"
+                style="@style/GLDashboardIcnStyle"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dbIconCont2"
+        android:layout_above="@+id/lblSloganDashBoard"
+        android:layout_height="125dp"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:weightSum="3">
+        <LinearLayout
+            android:id="@+id/dsrlayout"
+            style="@style/GLDashboardButtonStyle"
+            >
+            <ImageView
+                android:src="@drawable/dsr"
+                style="@style/GLDashboardIcnStyle"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/quotelayout"
+            style="@style/GLDashboardButtonStyle"
+            >
+            <ImageView
+                android:src="@drawable/quote"
+                style="@style/GLDashboardIcnStyle"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dftLayout"
+            android:visibility="gone"
+            style="@style/GLDashboardButtonStyle"
+            >
+            <ImageView
+                style="@style/GLDashboardIcnStyle"
+                android:src="@drawable/dft"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/usefulLinksLayout"
+            style="@style/GLDashboardButtonStyle"
+            >
+            <ImageView
+                android:src="@drawable/useful_links"
+                style="@style/GLDashboardIcnStyle"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/lblSloganDashBoard"
+        android:layout_alignParentBottom="true"
+        android:background="#21282d"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gl_dashboard_bg_white"
+        android:text="&quot;Our Logistics Solutions. That Will Run Your Business&quot;"
+        android:gravity="center"/>
+
+    <!--  -->
+
+    <FrameLayout
+        android:layout_above="@+id/dbIconCont1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:padding="5dp"
+       >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/db_banner"
+            android:scaleType="centerCrop"/>
+        <include
+
+            android:id="@+id/layoutLatestNews"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            layout="@layout/latest_newa_caption"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+
+</RelativeLayout>

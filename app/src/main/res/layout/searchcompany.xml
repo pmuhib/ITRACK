@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gl_background">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search_company"
+        android:padding="6dp"
+        android:textSize="18sp"
+        android:textColor="#a2a6a9"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="2dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+
+            android:id="@+id/txt_compSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/search_icon"
+            android:drawableEnd="@drawable/search_icon"
+            android:padding="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <EditText
+            android:layout_toLeftOf="@+id/txt_compSearch"
+            android:layout_toStartOf="@+id/txt_compSearch"
+            android:id="@+id/et_compName"
+            style="@style/GLAppEditTextTheme"
+            android:layout_width="match_parent"
+            android:hint="Search Company by Name"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="5dp"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/txt_selection"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#a2a6a9"
+        android:text="Select your Company to move next"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/clientItemList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:layout_gravity="left"
+        />
+    <LinearLayout
+        android:id="@+id/bottomview"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:background="@color/gl_background">
+        <RelativeLayout
+            android:id="@+id/bottombar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:id="@+id/ployee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not Your Compnay??"
+                android:textSize="15sp"
+                android:textColor="#a2a6a9"
+                android:padding="5dp"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:id="@+id/txt_addComp"
+                android:textColor="@color/gl_dashboard_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ployee"
+                android:text="Add Your Company Now"
+                android:textSize="17sp"
+                android:padding="2dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

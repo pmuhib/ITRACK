@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="#a2395f72"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+
+        >
+
+        <TableRow android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Our Price To Customer"
+                android:textColor="#d9d9d9"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvOurPriceToCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="#d9d9d9" />
+        </TableRow>
+
+        <TableRow android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Our Cost"
+                android:textColor="#d9d9d9"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvOurCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="#d9d9d9"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Advance"
+                android:textColor="#d9d9d9"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAdvance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="#d9d9d9" />
+        </TableRow>
+
+        <TableRow android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Balance"
+                android:textColor="#d9d9d9"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="#d9d9d9" />
+        </TableRow>
+
+        <TableRow android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Border Charge"
+                android:textColor="#d9d9d9"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvBorderCharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+
+                android:textColor="#d9d9d9" />
+        </TableRow>
+
+        <TableRow android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Balance Paid"
+                android:textColor="#d9d9d9"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvBalancePaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="#d9d9d9" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <GridLayout
+        android:layout_margin="20dp"
+        android:id="@+id/doc_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/doc_file_icn"
+            android:padding="10dp"
+            android:text="Document1"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/doc_file_icn"
+            android:text="Document1"
+            android:textColor="#fff" />
+
+    </GridLayout>
+
+</LinearLayout>

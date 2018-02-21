@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Title's Label-->
+    <string name="viewclientlist">Clients</string>
+    <string name="addnewclient">Add New Client</string>
+    <string name="addemployee">Add Employee</string>
+    <string name="editemployee">Edit Employee</string>
+    <string name="editclient">Edit Client</string>
+    <string name="newsupdate">News Update</string>
+    <string name="events_update">Events Update</string>
+    <string name="addnewdsr">Add New DSR</string>
+    <string name="editdsr">Add New DSR</string>
+    <string name="viewdsrlist">DSR List</string>
+    <string name="viewquotelist">Quote List</string>
+    <string name="viewmessages">Messages</string>
+    <string name="composemessage">Compose Message</string>
+    <string name="view_employees">View Employee</string>
+    <string name="gen_info">General Information</string>
+    <string name="select_status">Select Status</string>
+    <string name="quote_req_msg">Quote Request Message</string>
+    <string name="addnewquote">Add New Quote</string>
+    <string name="edit_quote">Edit Quote</string>
+    <string name="add_quote">Add Quote</string>
+    <string name="social_media">Social Media</string>
+
+
+    <string name="number_of_trucks">Number Of Trucks</string>
+    <string name="website">Website</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="address">Address</string>
+    <string name="fax">Fax</string>
+    <string name="company">Company</string>
+    <string name="designation">Designation</string>
+    <string name="loading_point">Loading Point</string>
+    <string name="destination_point">Destination Point</string>
+    <string name="eta_customs">ETA Customs</string>
+    <string name="user_type">Type</string>
+    <string name="client">Client</string>
+    <string name="employee">Employee</string>
+    <string name="subject">Subject</string>
+    <string name="message">Message</string>
+    <string name="stats">Status</string>
+    <string name="send">Send</string>
+    <string name="cancel">Cancel</string>
+    <string name="remark">Remarks</string>
+    <string name="dsr_ref_no">DSR Ref #</string>
+    <string name="client_ref_no">Client Ref #</string>
+    <string name="dsr_date_time">DSR D/T</string>
+    <string name="driver_name">Driver Name</string>
+    <string name="driver_phone">Driver Phone</string>
+    <string name="type_of_trailer">Type Of Trailer</string>
+    <string name="vehicle_number">Vehicle #</string>
+    <string name="offloading_dt">Offload D/T</string>
+    <string name="detention">Detention</string>
+    <string name="detention_client">Detention Client</string>
+    <string name="cost">Additional Service Cost</string>
+    <string name="cost_client">Additional Services Charges</string>
+    <string name="cost_type">Additional Services Description</string>
+    <string name="detention_location">Detention Description</string>
+    <string name="status">Status</string>
+    <string name="addmore">Add Additional Services</string>
+
+    <string name="d_n_receive_dt">D.N. Received D/T</string>
+    <string name="advance">Advance</string>
+    <string name="balance">Balance</string>
+    <string name="border_charge">Border Charge</string>
+    <string name="balance_paid">Balance Paid</string>
+
+    <string name="service_details">Services Details</string>
+    <string name="services_of_interest">Services Of\nInterest</string>
+    <string name="origin">Origin</string>
+    <string name="pieces">Pieces</string>
+    <string name="destination">Destination</string>
+    <string name="commodity">Commodity</string>
+    <string name="weight">Weight in Kgs</string>
+    <string name="other">Other</string>
+
+    <string name="others">Others</string>
+    <string name="next">Next</string>
+    <string name="air_freight">Air Freight</string>
+    <string name="ocean_freight">Ocean Freight</string>
+    <string name="truckload">Truckload</string>
+
+
+    <string name="contact_details">Contact Details</string>
+    <string name="add_services">Add. Services</string>
+    <string name="account_num">Account #</string>
+    <string name="emp_name" >Name</string>
+    <string name="industry">Industry</string>
+    <string name="contact_method">Contact Method</string>
+
+
+
+    <string name="submit_now">Submit Now!</string>
+    <string name="submit">Submit</string>
+    <string name="previous">Previous</string>
+
+
+
+</resources>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/lblQuoteServiceDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/GLTabStyle"
+        android:gravity="center"
+        android:text="@string/service_details"
+        android:textSize="17sp"
+        android:padding="10dp"
+        />
+
+    <ScrollView
+        android:layout_above="@+id/tvSubmitServiceDetails"
+        android:layout_below="@+id/lblQuoteServiceDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/gl_background">
+            <LinearLayout
+                android:id="@+id/servicesOfInterestContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    style="@style/GLLblBoldStyle"
+                    android:text="@string/services_of_interest"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/containerSOI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:columnCount="2"
+                    >
+                    <CheckBox
+                        android:id="@+id/chkBoxAirFreight"
+                        android:gravity="top"
+                        android:text="@string/air_freight"
+                        android:layout_width="wrap_content"
+                        android:buttonTint="#fff"
+                        style="@style/GLLblNormalStyle"
+                        android:textSize="12sp"
+                        tools:targetApi="lollipop" />
+                    <CheckBox
+                        android:buttonTint="#fff"
+                        tools:targetApi="lollipop"
+                        android:gravity="top"
+                        android:id="@+id/chkBoxOceanFreight"
+                        android:layout_toRightOf="@+id/chkBoxAirFreight"
+                        android:layout_toEndOf="@id/chkBoxAirFreight"
+                        android:text="@string/ocean_freight"
+                        android:layout_width="match_parent"
+                        style="@style/GLLblNormalStyle"
+                        android:textSize="12sp"
+                        />
+
+                    <CheckBox
+                        android:buttonTint="#fff"
+                        tools:targetApi="lollipop"
+                        android:gravity="top"
+                        android:layout_below="@+id/chkBoxOceanFreight"
+                        android:text="@string/truckload"
+                        android:layout_width="wrap_content"
+                        style="@style/GLLblNormalStyle"
+                        android:textSize="12sp"
+                        />
+
+                    <CheckBox
+                        android:buttonTint="#fff"
+                        tools:targetApi="lollipop"
+                        android:gravity="top"
+                        android:layout_below="@+id/chkBoxOceanFreight"
+                        android:layout_toRightOf="@+id/chkBoxAirFreight"
+                        android:layout_toEndOf="@id/chkBoxAirFreight"
+                        android:text="@string/others"
+                        android:layout_width="match_parent"
+                        style="@style/GLLblNormalStyle"
+                        android:textSize="12sp"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/DividerTheme"/>
+
+            <!---->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/lblOrigin"
+                    android:text="@string/origin"
+                    android:layout_width="150dp"
+                    style="@style/GLLblBoldStyle" />
+
+                <LinearLayout
+                    android:id="@+id/originContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@+id/lblOrigin"
+                    android:layout_toEndOf="@+id/lblOrigin">
+                    <Spinner
+                        android:visibility="gone"
+                        android:id="@+id/spinnerOriginList"
+                        style="@style/GLSpinnerTheme" />
+                    <AutoCompleteTextView
+                        android:id="@+id/autocompleteTOrigin"
+                        android:layout_width="match_parent"
+                        style="@style/GLAutoTextViewTheme"
+                        android:ems="10"
+                        android:hint="Select Origin"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:completionThreshold="1"
+                        android:singleLine="true"
+                        />
+                    <include
+
+                        android:id="@+id/originOtherOptionContainer"
+                        layout="@layout/location_other_option"/>
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_below="@id/originContainer"
+                    style="@style/DividerTheme"/>
+            </RelativeLayout>
+
+
+            <!---->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="150dp"
+                    android:id="@+id/lblDestinationPoint"
+                    android:text="@string/destination"
+                    style="@style/GLLblBoldStyle" />
+                <LinearLayout
+                    android:id="@+id/destinationPointContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@id/lblDestinationPoint"
+                    android:layout_toEndOf="@id/lblDestinationPoint">
+                    <Spinner
+                        android:visibility="gone"
+                        android:id="@+id/spinnerDestinationList"
+                        style="@style/GLSpinnerTheme"  />
+                    <AutoCompleteTextView
+                        android:id="@+id/autocompleteTDestination"
+                        android:layout_width="match_parent"
+                        style="@style/GLAutoTextViewTheme"
+                        android:ems="10"
+                        android:hint="Select destination"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:completionThreshold="1"
+                        android:singleLine="true"
+                        />
+
+                    <include
+                        android:id="@+id/destOtherOptionContainer"
+                        layout="@layout/location_other_option"/>
+                </LinearLayout>
+
+
+                <View
+                    android:layout_below="@id/destinationPointContainer"
+                    style="@style/DividerTheme"/>
+            </RelativeLayout>
+
+
+            <!---->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/lblCommodity"
+                    android:text="@string/commodity"
+                    android:layout_width="150dp"
+                    style="@style/GLLblBoldStyle" />
+
+                <EditText
+                    android:hint="@string/commodity"
+                    android:id="@+id/etCommodity"
+                    android:layout_toRightOf="@id/lblCommodity"
+                    android:layout_toEndOf="@id/lblCommodity"
+                    style="@style/GLEditTextTheme" />
+                <View
+                    android:layout_below="@id/etCommodity"
+                    style="@style/DividerTheme"/>
+            </RelativeLayout>
+
+
+            <!---->
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/lblPieces"
+                    android:text="@string/pieces"
+                    android:layout_width="150dp"
+                    style="@style/GLLblBoldStyle" />
+
+                <EditText
+                    android:hint="@string/pieces"
+                    android:id="@+id/etPieces"
+                    android:inputType="number"
+                    android:layout_toRightOf="@id/lblPieces"
+                    android:layout_toEndOf="@id/lblPieces"
+                    style="@style/GLEditTextTheme" />
+                <View
+                    android:layout_below="@id/etPieces"
+                    style="@style/DividerTheme"/>
+
+            </RelativeLayout>
+
+            <!---->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/lblWeight"
+                    android:text="@string/weight"
+                    android:layout_width="150dp"
+                    style="@style/GLLblBoldStyle" />
+
+                <EditText
+                    android:hint="@string/weight"
+                    android:id="@+id/etWeightCommodity"
+                    android:inputType="number"
+                    android:layout_toRightOf="@id/lblWeight"
+                    android:layout_toEndOf="@id/lblWeight"
+                    style="@style/GLEditTextTheme" />
+                <View
+                    android:layout_below="@id/etWeightCommodity"
+                    style="@style/DividerTheme"/>
+            </RelativeLayout>
+
+
+            <!---->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/lblOther"
+                    android:text="@string/other"
+                    android:layout_width="150dp"
+                    style="@style/GLLblBoldStyle" />
+
+                <EditText
+                    android:hint="@string/other"
+                    android:id="@+id/etOther"
+                    android:layout_toRightOf="@id/lblOther"
+                    android:layout_toEndOf="@id/lblOther"
+                    style="@style/GLEditTextTheme" />
+                <View
+                    android:layout_below="@id/etOther"
+                    style="@style/DividerTheme"/>
+            </RelativeLayout>
+
+
+            <!---->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/lblMessage"
+                    android:text="@string/message"
+                    android:layout_width="150dp"
+                    style="@style/GLLblBoldStyle" />
+
+                <EditText
+                    android:hint="@string/message"
+
+                    android:id="@+id/etQuoteMessage"
+                    android:layout_toRightOf="@id/lblMessage"
+                    android:layout_toEndOf="@id/lblMessage"
+                    style="@style/GLEditTextTheme"  />
+                <View
+                    android:layout_below="@id/etQuoteMessage"
+                    style="@style/DividerTheme"/>
+            </RelativeLayout>
+
+
+            <!---->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:id="@+id/lblAdditionalServices"
+                    android:text="@string/add_services"
+                    android:layout_width="150dp"
+                    style="@style/GLLblBoldStyle" />
+
+                <EditText
+                    android:hint="@string/add_services"
+                    android:id="@+id/etAdditionalServices"
+                    android:layout_toRightOf="@id/lblAdditionalServices"
+                    android:layout_toEndOf="@id/lblAdditionalServices"
+                    style="@style/GLEditTextTheme" />
+                <View
+                    android:layout_below="@id/etAdditionalServices"
+                    style="@style/DividerTheme"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvSubmitServiceDetails"
+        android:layout_width="wrap_content"
+        style="@style/GLButtonMarigold"
+        android:gravity="center"
+        android:text="@string/next"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp" />
+
+</RelativeLayout>

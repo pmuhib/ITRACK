@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/action_quotes"
+        android:icon="@drawable/quotes_drawar"
+
+        android:title="Quotes"
+        />
+
+    <item android:id="@+id/action_dsr"
+        android:title="DSR"
+        />
+
+    <item
+        android:id="@+id/action_view_employee"
+        android:title="View Employee"
+        />
+    <item android:id="@+id/action_email"
+        android:title="E-Mail"
+        />
+
+    <item android:id="@+id/action_call"
+        android:title="Call"
+        />
+
+    <item android:id="@+id/action_delete"
+        android:title="Delete"
+        />
+
+</menu>

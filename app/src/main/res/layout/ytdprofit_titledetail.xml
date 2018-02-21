@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_weight="0.50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transportation "
+                style="@style/GLLblBoldStyleLargeGold"
+                android:padding="2dp"
+                android:layout_margin="0dp"/>
+
+            <TextView
+                android:textColor="@color/gl_dft_header_footer_heading_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Income :"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cost :"
+                android:textColor="@color/gl_dft_header_footer_heading_color"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Net"
+                android:textColor="@color/gl_dft_header_footer_heading_color"
+
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Border"
+                style="@style/GLLblBoldStyleLargeGold"
+                android:padding="2dp"
+                android:layout_margin="0dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/GLLblBoldStyleLargeGold"
+                android:text="Detention "
+                android:padding="2dp"
+                android:layout_margin="0dp"/>
+            <TextView
+                android:textColor="@color/gl_dft_header_footer_heading_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cost"
+                android:padding="2dp"/>
+            <TextView
+                android:textColor="@color/gl_dft_header_footer_heading_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charge"
+                android:padding="2dp"/>
+            <TextView
+                android:textColor="@color/gl_dft_header_footer_heading_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Net"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/GLLblBoldStyleLargeGold"
+                android:text="Additional "
+                android:padding="2dp"
+                android:layout_margin="0dp"/>
+            <TextView
+                android:textColor="@color/gl_dft_header_footer_heading_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cost"
+                android:padding="2dp"/>
+            <TextView
+                android:textColor="@color/gl_dft_header_footer_heading_color"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charge"
+                android:padding="2dp"/>
+            <TextView
+                android:textColor="@color/gl_dft_header_footer_heading_color"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Net"
+                android:padding="2dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="0.50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                style="@style/GLLblBoldStyleLargeGold"
+                android:padding="2dp"
+                android:layout_margin="0dp"/>
+            <TextView
+                android:textColor="@color/gl_dft_header_footer_heading_color"
+
+                android:id="@+id/txt_transincome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AED 88"
+                android:padding="2dp"/>
+            <TextView
+                android:textColor="@color/gl_dft_header_footer_heading_color"
+
+                android:id="@+id/txt_transcost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AED 80"
+                android:padding="2dp"/>
+
+            <TextView
+                android:id="@+id/txt_transnet"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="AED 8"
+                android:textColor="@color/gl_dft_header_footer_heading_color" />
+
+            <TextView
+                android:textColor="@color/gl_dft_header_footer_heading_color"
+                android:id="@+id/txt_Border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AED 87"
+                android:textSize="14sp"
+                android:padding="2dp"
+                android:layout_margin="0dp"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/GLLblBoldStyleLargeGold"
+                android:text=" "
+                android:padding="2dp"
+                android:layout_margin="0dp"/>
+            <TextView
+                android:textColor="@color/gl_dft_header_footer_heading_color"
+
+                android:id="@+id/txt_deteCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AED 1500"
+                android:padding="2dp"/>
+            <TextView
+                android:textColor="@color/gl_dft_header_footer_heading_color"
+
+                android:id="@+id/txt_deteCharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AED 2000"
+                android:padding="2dp"/>
+            <TextView
+                android:id="@+id/txt_deteNet"
+                android:textColor="@color/gl_dft_header_footer_heading_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AED 33000"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/GLLblBoldStyleLargeGold"
+                android:text=""
+                android:padding="2dp"
+                android:layout_margin="0dp"/>
+            <TextView
+                android:id="@+id/txt_additiCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AED 87"
+                android:textColor="@color/gl_dft_header_footer_heading_color"
+                android:padding="2dp"/>
+            <TextView
+                android:id="@+id/txt_additiCharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AED 100"
+                android:textColor="@color/gl_dft_header_footer_heading_color"
+                android:padding="2dp"/>
+            <TextView
+                android:id="@+id/txt_additiNet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AED 200"
+                android:textColor="@color/gl_dft_header_footer_heading_color"
+                android:padding="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

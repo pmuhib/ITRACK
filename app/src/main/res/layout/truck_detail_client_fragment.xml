@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollVCargoDSR"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/truckViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <!---->
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/lblTruckStatus"
+                android:layout_width="160dp"
+                android:text="@string/status"
+                style="@style/GLLblBoldStyle" />
+            <TextView
+
+                android:layout_toRightOf="@+id/lblTruckStatus"
+                android:layout_toEndOf="@+id/lblTruckStatus"
+                android:id="@+id/tvStatus"
+                style="@style/GLLblNormalStyle" />
+            <View
+                android:layout_below="@+id/tvStatus"
+                style="@style/DividerTheme"/>
+
+        </RelativeLayout>
+
+        <!---->
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/lblTruckCurrentLoc"
+                android:layout_width="160dp"
+                android:text="Current Location"
+                style="@style/GLLblBoldStyle" />
+            <TextView
+
+                android:layout_toRightOf="@+id/lblTruckCurrentLoc"
+                android:layout_toEndOf="@+id/lblTruckCurrentLoc"
+                android:id="@+id/tvTruckCurrentLocation"
+                style="@style/GLLblNormalStyle" />
+            <View
+                android:layout_below="@+id/tvTruckCurrentLocation"
+                style="@style/DividerTheme"/>
+        </RelativeLayout>
+
+        <!---->
+        <RelativeLayout
+            android:id="@+id/offLoadingDTCont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/lblOffLoadingDateTime"
+                android:layout_width="160dp"
+
+                android:text="@string/offloading_dt"
+                style="@style/GLLblBoldStyle"  />
+            <TextView
+
+                android:layout_toRightOf="@+id/lblOffLoadingDateTime"
+                android:layout_toEndOf="@+id/lblOffLoadingDateTime"
+                android:id="@+id/tvOffLoadingDate"
+                style="@style/GLLblNormalStyle" />
+            <View
+                android:layout_below="@+id/tvOffLoadingDate"
+                style="@style/DividerTheme"/>
+        </RelativeLayout>
+
+        <!---->
+        <RelativeLayout
+            android:id="@+id/detentionDaysCont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/lblDetentionDays"
+                android:layout_width="160dp"
+                android:text="@string/detention"
+                style="@style/GLLblBoldStyle" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/lblDetentionDays"
+                android:layout_toEndOf="@+id/lblDetentionDays"
+                android:id="@+id/tvDetention"
+                style="@style/GLLblNormalStyle"
+                />
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_toRightOf="@+id/tvDetention"
+                android:layout_toEndOf="@+id/tvDetention"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rate : "
+                    android:textStyle="bold"
+                    style="@style/GLLblNormalStyle"/>
+
+                <!--<TextView-->
+                <!--android:id="@+id/tvDetentionRate"-->
+                <!--style="@style/GLLblNormalStyle"-->
+                <!--/>-->
+            </LinearLayout>
+
+            <View
+                android:layout_below="@+id/tvDetention"
+                style="@style/DividerTheme"/>
+        </RelativeLayout>
+        <!---->
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="160dp"
+                android:id="@+id/lblOurPrice"
+                android:text="@string/our_price_to_customer"
+                style="@style/GLLblBoldStyle" />
+            <TextView
+
+
+                android:layout_toRightOf="@+id/lblOurPrice"
+                android:layout_toEndOf="@+id/lblOurPrice"
+                android:id="@+id/tvOurPriceToCustomer"
+                style="@style/GLLblNormalStyle" />
+            <View
+
+                android:layout_below="@+id/tvOurPriceToCustomer"
+                style="@style/DividerTheme"/>
+        </RelativeLayout>
+
+        <!---->
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+
+                android:layout_width="160dp"
+
+                android:text="@string/our_cost"
+                android:id="@+id/lblOurCost"
+                style="@style/GLLblBoldStyle"/>
+            <TextView
+
+
+                android:layout_toRightOf="@+id/lblOurCost"
+                android:layout_toEndOf="@+id/lblOurCost"
+                android:id="@+id/tvOurCost"
+                style="@style/GLLblNormalStyle" />
+            <View
+
+                android:layout_below="@+id/tvOurCost"
+                style="@style/DividerTheme"/>
+            <!---->
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/lblBorderCharge"
+                android:layout_width="160dp"
+
+                android:text="@string/border_charge"
+                style="@style/GLLblBoldStyle" />
+            <TextView
+
+                android:layout_toRightOf="@+id/lblBorderCharge"
+                android:layout_toEndOf="@+id/lblBorderCharge"
+                android:id="@+id/tvBorderCharge"
+                style="@style/GLLblNormalStyle"/>
+            <View
+                android:layout_below="@+id/tvBorderCharge"
+                style="@style/DividerTheme"/>
+        </RelativeLayout>
+
+        <!---->
+        <RelativeLayout
+            android:id="@+id/detentionRateCont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/lblDetentionRate"
+                android:layout_width="160dp"
+
+                android:text="Detention Rate"
+                style="@style/GLLblBoldStyle" />
+            <TextView
+
+                android:layout_toRightOf="@+id/lblDetentionRate"
+                android:layout_toEndOf="@+id/lblDetentionRate"
+                android:id="@+id/tvDetentionRate"
+                style="@style/GLLblNormalStyle"
+                />
+            <View
+                android:layout_below="@+id/tvDetentionRate"
+                style="@style/DividerTheme"/>
+        </RelativeLayout>
+
+        <!---->
+
+        <RelativeLayout
+            android:id="@+id/detentionChargesCont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/lblDetentionCharges"
+                android:layout_width="160dp"
+
+                android:text="Detention Charge"
+                style="@style/GLLblBoldStyle" />
+            <TextView
+
+                android:layout_toRightOf="@+id/lblDetentionCharges"
+                android:layout_toEndOf="@+id/lblDetentionCharges"
+                android:id="@+id/tvDetentionCharges"
+                style="@style/GLLblNormalStyle"
+                android:layout_width="wrap_content"
+                />
+            <TextView
+                android:minHeight="30dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvForDetentionLocation"
+                style="@style/GLLblNormalStyle"
+                android:layout_width="wrap_content"
+                android:layout_toEndOf="@+id/tvDetentionCharges"
+                android:layout_toRightOf="@+id/tvDetention"
+                />
+
+            <View
+                android:layout_below="@+id/tvDetentionCharges"
+                style="@style/DividerTheme"/>
+        </RelativeLayout>
+
+        <!---->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/lblCostClient"
+                style="@style/GLLblBoldStyle"
+                android:layout_width="160dp"
+                android:text="@string/cost_client" />
+
+            <GridLayout
+                android:columnCount="2"
+                android:id="@+id/additionalClientCostContainer"
+                android:layout_below="@id/additionalCostContainer"
+                android:layout_toEndOf="@+id/lblCostClient"
+                android:layout_toRightOf="@+id/lblCostClient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:minHeight="50dp"
+                    android:id="@+id/tvForCostClient"
+                    style="@style/GLLblNormalStyle"
+                    android:layout_width="wrap_content"
+                    />
+                <TextView
+                    android:minHeight="50dp"
+                    android:id="@+id/tvForCostType"
+                    style="@style/GLLblNormalStyle"
+                    android:layout_width="wrap_content"
+                    />
+            </GridLayout>
+
+            <View
+                style="@style/DividerTheme"
+                android:layout_below="@+id/additionalClientCostContainer" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dnrDTCont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="160dp"
+                android:id="@+id/lblDNReceiveDateTime"
+                android:text="@string/d_n_receive_dt"
+                style="@style/GLLblBoldStyle" />
+            <TextView
+
+                android:layout_toRightOf="@+id/lblDNReceiveDateTime"
+                android:layout_toEndOf="@+id/lblDNReceiveDateTime"
+                android:id="@+id/tvDeliveryNoteReceivedDate"
+                style="@style/GLLblNormalStyle"/>
+            <View
+                android:layout_below="@+id/tvDeliveryNoteReceivedDate"
+                style="@style/DividerTheme"/>
+        </RelativeLayout>
+
+
+
+        <!---->
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/lblDriverName"
+                android:layout_width="160dp"
+
+                style="@style/GLLblBoldStyle"
+                android:text="@string/driver_name"
+                />
+            <TextView
+
+                android:layout_toRightOf="@+id/lblDriverName"
+                android:layout_toEndOf="@+id/lblDriverName"
+                android:id="@+id/tvTruckDriverName"
+                style="@style/GLLblNormalStyle"/>
+            <View
+                android:layout_below="@+id/tvTruckDriverName"
+                style="@style/DividerTheme"/>
+        </RelativeLayout>
+
+        <!---->
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/lblDriverPhone"
+                android:layout_width="160dp"
+
+                android:text="@string/driver_phone"
+                style="@style/GLLblBoldStyle" />
+            <TextView
+
+                android:layout_toRightOf="@+id/lblDriverPhone"
+                android:layout_toEndOf="@+id/lblDriverPhone"
+                android:id="@+id/tvTruckDriverPhone"
+                style="@style/GLLblNormalStyle"
+                />
+            <View
+                android:layout_below="@+id/tvTruckDriverPhone"
+                style="@style/DividerTheme"/>
+        </RelativeLayout>
+
+        <!---->
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/lblTypeOfTrailer"
+                android:layout_width="160dp"
+
+                android:text="@string/type_of_trailer"
+                style="@style/GLLblBoldStyle" />
+            <TextView
+
+                android:layout_toRightOf="@+id/lblTypeOfTrailer"
+                android:layout_toEndOf="@+id/lblTypeOfTrailer"
+                android:id="@+id/tvTypeOfTrailer"
+                style="@style/GLLblNormalStyle" />
+            <View
+                android:layout_below="@+id/tvTypeOfTrailer"
+                style="@style/DividerTheme"/>
+        </RelativeLayout>
+
+        <!---->
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/lblVehicleNumber"
+                android:layout_width="160dp"
+
+                android:text="@string/vehicle_number"
+                style="@style/GLLblBoldStyle" />
+            <TextView
+
+                android:layout_toRightOf="@+id/lblVehicleNumber"
+                android:layout_toEndOf="@+id/lblVehicleNumber"
+                android:id="@+id/tvVehicalNumber"
+                style="@style/GLLblNormalStyle" />
+            <View
+                android:layout_below="@+id/tvVehicalNumber"
+                style="@style/DividerTheme"/>
+        </RelativeLayout>
+
+        <!---->
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/lblRemarks"
+                android:layout_width="160dp"
+
+                android:text="Description"
+                style="@style/GLLblBoldStyle"  />
+            <TextView
+
+                android:layout_toRightOf="@+id/lblRemarks"
+                android:layout_toEndOf="@+id/lblRemarks"
+                android:id="@+id/tvRemark"
+                style="@style/GLLblNormalStyle"/>
+            <View
+                android:layout_below="@+id/tvRemark"
+                style="@style/DividerTheme"/>
+        </RelativeLayout>
+
+        <!---->
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="160dp"
+                android:visibility="gone"
+                android:id="@+id/lblCurrrencyCode"
+                android:text="Currency Code"
+                style="@style/GLLblBoldStyle" />
+            <TextView
+                android:visibility="gone"
+                android:layout_toRightOf="@+id/lblCurrrencyCode"
+                android:layout_toEndOf="@+id/lblCurrrencyCode"
+                android:id="@+id/tvCurrencyCode"
+                style="@style/GLLblNormalStyle"/>
+            <View
+                android:layout_below="@+id/tvCurrencyCode"
+                style="@style/DividerTheme"/>
+        </RelativeLayout>
+
+        <!---->
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="160dp"
+                android:visibility="gone"
+
+                android:text="@string/advance"
+                android:id="@+id/lblAdvance"
+                style="@style/GLLblBoldStyle" />
+            <TextView
+                android:visibility="gone"
+                android:layout_toRightOf="@+id/lblAdvance"
+                android:layout_toEndOf="@+id/lblAdvance"
+                android:id="@+id/tvAdvance"
+                style="@style/GLLblNormalStyle"/>
+            <View
+                android:visibility="gone"
+                android:layout_below="@+id/tvAdvance"
+                style="@style/DividerTheme"/>
+        </RelativeLayout>
+
+
+        <!---->
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="160dp"
+                android:visibility="gone"
+                android:text="@string/balance"
+                android:id="@+id/lblBalance"
+                style="@style/GLLblBoldStyle" />
+            <TextView
+                android:visibility="gone"
+                android:layout_toRightOf="@+id/lblBalance"
+                android:layout_toEndOf="@+id/lblBalance"
+                android:id="@+id/tvBalance"
+                style="@style/GLLblNormalStyle"/>
+            <View
+                android:visibility="gone"
+                android:layout_below="@+id/tvBalance"
+                style="@style/DividerTheme"/>
+        </RelativeLayout>
+
+        <!---->
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="160dp"
+                android:visibility="gone"
+                android:id="@+id/lblBalancePaid"
+                android:text="@string/balance_paid"
+                style="@style/GLLblBoldStyle" />
+            <TextView
+                android:layout_toRightOf="@+id/lblBalancePaid"
+                android:layout_toEndOf="@+id/lblBalancePaid"
+                android:id="@+id/tvBalancePaid"
+                android:visibility="gone"
+                style="@style/GLLblNormalStyle"/>
+            <View
+                android:visibility="gone"
+                android:layout_below="@+id/tvBalancePaid"
+                style="@style/DividerTheme"/>
+        </RelativeLayout>
+
+        <!---->
+
+        <LinearLayout
+            android:layout_below="@+id/tvRemark"
+            android:id="@+id/documentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

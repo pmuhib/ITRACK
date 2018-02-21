@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gl_background"
+    android:orientation="vertical"
+    >
+    <include
+        layout="@layout/client_search_layout"
+        android:id="@+id/search_layout"/>
+         <android.support.v7.widget.RecyclerView
+        android:id="@+id/clientItemList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:layout_gravity="left"
+        />
+    <RelativeLayout android:id="@+id/bottombar"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+        android:layout_gravity="bottom"
+    android:background="@color/gl_bottom_bar">
+    <ImageView
+        android:id="@+id/addicon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/plus_bottom_icon"
+        android:layout_centerVertical="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="?attr/selectableItemBackground"
+        android:layout_alignParentLeft="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/navigation_dot_icon"
+        android:layout_centerVertical="true"
+        android:paddingRight="20dp"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:id="@+id/ivSearchIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/search_icon"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="?attr/selectableItemBackground"
+
+        />
+
+
+</RelativeLayout>
+
+</LinearLayout>

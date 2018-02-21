@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_height="@dimen/toolbar_height"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:minHeight="?attr/actionBarSize"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:background="@color/gl_toolbar"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:paddingRight="20dp"
+            android:id="@+id/btn_navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/back_icon"
+            android:background="?attr/selectableItemBackground"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tvLanguage"
+            android:background="@drawable/rectangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EN"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/tvDftDateRange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="05-05-2016\n05-05-2016"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/cal_white"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/tvLanguage"
+            android:layout_toStartOf="@+id/tvLanguage"
+            android:layout_toRightOf="@+id/btn_navigation"
+            android:layout_toEndOf="@+id/btn_navigation"/>
+
+       <!-- <ImageView
+            android:id="@+id/ivDftFromDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tvLanguage"
+            android:src="@drawable/calender"
+            android:layout_centerVertical="true"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/ivDftFromDate"
+            android:layout_toStartOf="@+id/ivDftFromDate"
+            android:layout_toRightOf="@+id/btn_navigation"
+            android:layout_toEndOf="@+id/btn_navigation"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:padding="2dp"
+                android:id="@+id/tvDftFromDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/global_txt"
+                android:textColor="#ffffff"
+                android:gravity="center"/>
+
+            <TextView
+                android:padding="2dp"
+                android:id="@+id/tvDftToDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/global_txt"
+                android:textColor="#ffffff"
+                android:gravity="center"/>
+
+        </LinearLayout>-->
+
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.Toolbar>

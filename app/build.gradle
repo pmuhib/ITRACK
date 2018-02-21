@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.client.itrack"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 12
+        versionName "1.3.62"
+        // Enabling multi-dex support.
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+
+}
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.bignerdranch.android:expandablerecyclerview:2.1.1'
+    compile 'com.google.firebase:firebase-messaging:9.2.0'
+    compile 'com.android.support:support-v4:24.1.0'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:recyclerview-v7:24.1.0'
+    compile 'com.android.support:appcompat-v7:24.1.0'
+    compile 'com.google.android.gms:play-services:9.2.0'
+    compile 'com.android.support:multidex:1.0.1'
+}
+configurations {
+    compile.exclude group: "org.apache.httpcomponents", module: "httpclient"
+}
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/btn_submit_dsr"
+        style="@style/GLButtonMarigold"
+        android:layout_margin="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Submit"
+        android:layout_width="wrap_content" />
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btn_prev_submit_dsr"
+        style="@style/GLButtonMarigold"
+        android:layout_margin="10dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/prev_arrow"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Previous"
+        android:textColor="#d9d9d9"
+        android:layout_width="wrap_content" />
+    <LinearLayout
+        android:layout_above="@+id/btn_submit_dsr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/truck_layout_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:id="@+id/numOfTruckContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/lblNumOfTrucks"
+                    android:text="Number Of Trucks"
+                    style="@style/GLLblBoldStyle"/>
+                <Spinner
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/spinnerListNumOfTrucks"
+                    style="@style/GLSpinnerTheme"
+                    android:layout_width="100dp"
+                    />
+
+            </RelativeLayout>
+
+
+            <!-- Tab Fragment Host  -->
+              <android.support.v4.app.FragmentTabHost
+                  android:id="@+id/tabhost"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  >
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+
+                      <HorizontalScrollView
+                          android:id="@+id/horizontalScrollView"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:background="@color/gl_tab_host_bg_color"
+                          android:scrollbars="none">
+
+                          <TabWidget
+                              android:id="@android:id/tabs"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:gravity="center_horizontal" >
+                          </TabWidget>
+                      </HorizontalScrollView>
+
+                      <FrameLayout
+                          android:id="@android:id/tabcontent"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          />
+                      <FrameLayout
+
+                          android:id="@+id/financial_detail_container"
+                          android:layout_width="match_parent"
+                          android:visibility="gone"
+                          android:layout_height="match_parent">
+                      </FrameLayout>
+
+                  </LinearLayout>
+
+
+              </android.support.v4.app.FragmentTabHost>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvHeadingFinancial"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#FFF"
+            android:gravity="center"
+            android:text="Financial Details"
+            android:textColor="#000"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

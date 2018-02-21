@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="?attr/selectableItemBackground">
+
+
+    <RelativeLayout
+        android:id="@+id/msgSummaryContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="top"
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_alignParentTop="true"
+            android:id="@+id/tvSenderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="@color/gl_lbl_bold_txt_color"/>
+        <com.client.itrack.utility.CircleImageView
+            android:layout_below="@id/tvSenderName"
+            android:id="@+id/imageSender"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/circledefault" />
+
+        <RelativeLayout
+            android:layout_toRightOf="@id/imageSender"
+            android:layout_below="@id/tvSenderName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            >
+            <TextView
+                android:id="@+id/msgDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date :10-04-2016"
+                android:textSize="20sp"
+                android:textColor="#d9d9d9"/>
+            <TextView
+                android:id="@+id/msgTime"
+                android:layout_below="@+id/msgDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time : 10:30pm"
+                android:textSize="20sp"
+                android:textColor="#d9d9d9"
+                />
+            <TextView
+                android:id="@+id/msgSubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#d9d9d9"
+                android:layout_below="@+id/msgTime"
+                android:textSize="20sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="kages and web page editors now use Lorem Ipsum as their default model text, and a search for \\'lorem ipsum\\' will uncover "/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/msgDetailContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/rectangle"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvMsgDetail"
+            android:padding="5dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:ellipsize="end"
+            android:textColor="#d9d9d9"
+            android:text=""
+            />
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/imgReplyMsgBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rectangle"
+            android:src="@drawable/reply"/>
+        <ImageView
+            android:id="@+id/imgDeleteMsgBtn"
+            android:layout_below="@id/imgReplyMsgBtn"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="5dp"
+            android:padding="10dp"
+            android:background="@drawable/rectangle"
+            android:src="@drawable/delete"/>
+
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/imgDeleteMsgBtn"
+            android:id="@+id/imgCloseMsgBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/rectangle"
+            android:src="@drawable/close"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

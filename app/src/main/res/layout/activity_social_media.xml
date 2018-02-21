@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/draw_logistics"
+android:gravity="center_horizontal"
+android:orientation="vertical"
+    >
+    <include
+        android:id="@+id/socialMediaToolbar"
+        layout="@layout/detailtoolbar" />
+    <LinearLayout
+        android:layout_below="@id/socialMediaToolbar"
+        android:layout_above="@+id/socialMediaIconContainer"
+     android:gravity="center_vertical"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="45sp"
+            android:text="We're\nSocial"
+           android:gravity="center"
+            android:textAllCaps="true"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:text="Follow us\non your favorite\n social media site"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:id="@+id/dbIconCont2"
+    android:layout_alignParentBottom="true"
+    android:layout_height="125dp"
+    android:layout_width="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingStart="10dp"
+    android:paddingRight="10dp"
+    android:paddingEnd="10dp"
+    android:layout_marginBottom="5dp"
+    android:weightSum="3">
+    <LinearLayout
+        style="@style/GLSocialButtonStyle"
+        >
+        <ImageView
+            android:id="@+id/whatsappLink"
+            android:src="@drawable/whatsapp"
+            style="@style/GLDashboardIcnStyle"
+            />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/GLSocialButtonStyle"
+        >
+        <ImageView
+            android:id="@+id/linkedinLink"
+            android:src="@drawable/linkedin"
+            style="@style/GLDashboardIcnStyle"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/GLSocialButtonStyle"
+        >
+        <ImageView
+            android:id="@+id/emailUsLink"
+            android:src="@drawable/email_us"
+            style="@style/GLDashboardIcnStyle"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_height="125dp"
+        android:id="@+id/socialMediaIconContainer"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:layout_above="@+id/dbIconCont2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            style="@style/GLSocialButtonStyle"
+            >
+            <ImageView
+                android:id="@+id/instagramLink"
+                android:src="@drawable/instagram"
+                style="@style/GLDashboardIcnStyle"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/GLSocialButtonStyle"
+            >
+            <ImageView
+                android:id="@+id/twitterLink"
+                android:src="@drawable/twitter"
+                style="@style/GLDashboardIcnStyle"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/GLSocialButtonStyle"
+            >
+            <ImageView
+                android:id="@+id/fbLink"
+                android:src="@drawable/facebook"
+                style="@style/GLDashboardIcnStyle"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

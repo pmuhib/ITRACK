@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/quoteContactHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/GLTabStyle"
+        android:gravity="center"
+        android:text="Contact Details"
+        android:textSize="17sp"
+        android:padding="10dp"
+        />
+
+    <ScrollView
+        android:layout_above="@+id/tvSubmitQuoteProposal"
+        android:id="@+id/quoteContactDetailCont"
+        android:layout_below="@+id/quoteContactHeader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gl_background">
+
+                <!-- <TextView
+                     style="@style/GLLblBoldStyle"
+                     android:text="Services Of\nInterest"
+                     />
+
+                 <GridView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:numColumns="2">
+
+                 </GridView>
+                 -->
+                <View
+                    style="@style/DividerTheme"/>
+
+                <TextView
+                    android:id="@+id/lblAccountNum"
+                    android:text="@string/account_num"
+                    style="@style/GLLblBoldStyle" />
+
+                <TextView
+
+                    android:id="@+id/etAccountNumber"
+                    android:layout_toRightOf="@+id/lblContactMethod"
+                    android:layout_toEndOf="@+id/lblContactMethod"
+                    style="@style/GLLblNormalStyle" />
+
+                <!---->
+                <View
+                    android:layout_below="@id/etAccountNumber"
+                    style="@style/DividerTheme"/>
+
+                <TextView
+                    android:layout_below="@id/etAccountNumber"
+                    android:text="@string/emp_name"
+
+                    style="@style/GLLblBoldStyle" />
+
+                <TextView
+
+                    android:id="@+id/etClientEmpName"
+                    android:layout_below="@id/etAccountNumber"
+                    android:layout_toRightOf="@id/lblContactMethod"
+                    android:layout_toEndOf="@id/lblContactMethod"
+                    style="@style/GLLblNormalStyle"/>
+                <View
+                    android:layout_below="@id/etClientEmpName"
+                    style="@style/DividerTheme"/>
+
+                <TextView
+                    android:layout_below="@id/etClientEmpName"
+                    android:text="@string/company"
+                    style="@style/GLLblBoldStyle" />
+
+                <TextView
+
+                    android:id="@+id/etClientCompany"
+                    android:layout_below="@id/etClientEmpName"
+                    android:layout_toRightOf="@id/lblContactMethod"
+                    android:layout_toEndOf="@id/lblContactMethod"
+                    style="@style/GLLblNormalStyle" />
+                <View
+                    android:layout_below="@id/etClientCompany"
+                    style="@style/DividerTheme"/>
+
+                <TextView
+                    android:layout_below="@id/etClientCompany"
+                    android:text="@string/phone"
+                    style="@style/GLLblBoldStyle" />
+
+                <TextView
+
+                    android:id="@+id/etPhone"
+                    android:layout_below="@id/etClientCompany"
+                    android:layout_toRightOf="@id/lblContactMethod"
+                    android:layout_toEndOf="@id/lblContactMethod"
+                    style="@style/GLLblNormalStyle" />
+                <View
+                    android:layout_below="@id/etPhone"
+                    style="@style/DividerTheme"/>
+
+                <TextView
+                    android:layout_below="@id/etPhone"
+                    android:text="@string/fax_txt"
+                    style="@style/GLLblBoldStyle"  />
+                <TextView
+
+                    android:id="@+id/etFax"
+                    android:layout_below="@id/etPhone"
+                    android:layout_toRightOf="@id/lblContactMethod"
+                    android:layout_toEndOf="@id/lblContactMethod"
+                    style="@style/GLLblNormalStyle" />
+                <View
+                    android:layout_below="@id/etFax"
+                    style="@style/DividerTheme"/>
+
+                <TextView
+                    android:layout_below="@id/etFax"
+                    android:text="@string/email_txt"
+                    style="@style/GLLblBoldStyle" />
+
+                <TextView
+
+                    android:id="@+id/etEmail"
+                    android:layout_below="@id/etFax"
+                    android:layout_toRightOf="@id/lblContactMethod"
+                    android:layout_toEndOf="@id/lblContactMethod"
+                    style="@style/GLLblNormalStyle" />
+                <View
+                    android:layout_below="@id/etEmail"
+                    style="@style/DividerTheme"/>
+
+
+                <TextView
+                    android:layout_below="@id/etEmail"
+                    android:text="@string/address"
+                    style="@style/GLLblBoldStyle" />
+
+                <TextView
+
+                    android:id="@+id/etAddress"
+                    android:layout_below="@id/etEmail"
+                    android:layout_toRightOf="@id/lblContactMethod"
+                    android:layout_toEndOf="@id/lblContactMethod"
+                    style="@style/GLLblNormalStyle" />
+                <View
+                    android:layout_below="@id/etAddress"
+                    style="@style/DividerTheme"/>
+
+
+                <TextView
+                    android:layout_below="@id/etAddress"
+                    android:text="@string/city_txt"
+                    style="@style/GLLblBoldStyle" />
+
+                <TextView
+                    android:id="@+id/spinnerCityList"
+                    android:layout_below="@id/etAddress"
+                    android:layout_toRightOf="@id/lblContactMethod"
+                    android:layout_toEndOf="@id/lblContactMethod"
+                    style="@style/GLLblNormalStyle" />
+                <View
+                    android:layout_below="@id/spinnerCityList"
+                    style="@style/DividerTheme"/>
+
+                <TextView
+                    android:layout_below="@id/spinnerCityList"
+
+                    android:text="@string/country_txt"
+                    style="@style/GLLblBoldStyle" />
+
+                <TextView
+                    android:id="@+id/spinnerCountryList"
+                    android:layout_below="@id/spinnerCityList"
+                    android:layout_toRightOf="@id/lblContactMethod"
+                    android:layout_toEndOf="@id/lblContactMethod"
+                    style="@style/GLLblNormalStyle" />
+                <View
+                    android:layout_below="@id/spinnerCountryList"
+                    style="@style/DividerTheme"/>
+
+                <TextView
+                    android:layout_below="@id/spinnerCountryList"
+                    android:text="@string/zipcode_txt"
+                    style="@style/GLLblBoldStyle" />
+
+                <TextView
+                    android:id="@+id/etZipCode"
+
+                    android:layout_below="@id/spinnerCountryList"
+                    android:layout_toRightOf="@id/lblContactMethod"
+                    android:layout_toEndOf="@id/lblContactMethod"
+                    style="@style/GLLblNormalStyle" />
+
+                <View
+                    android:layout_below="@id/etZipCode"
+                    style="@style/DividerTheme"/>
+
+                <TextView
+                    android:layout_below="@id/etZipCode"
+                    android:text="@string/industry"
+                    style="@style/GLLblBoldStyle" />
+
+                <TextView
+                    android:id="@+id/etIndustry"
+
+                    android:layout_below="@id/etZipCode"
+                    android:layout_toRightOf="@id/lblContactMethod"
+                    android:layout_toEndOf="@id/lblContactMethod"
+                    style="@style/GLLblNormalStyle" />
+
+                <View
+                    android:layout_below="@id/etIndustry"
+                    style="@style/DividerTheme"/>
+
+                <TextView
+                    android:layout_below="@id/etIndustry"
+                    android:id="@+id/lblContactMethod"
+                    android:text="@string/contact_method"
+                    style="@style/GLLblBoldStyle" />
+
+                <TextView
+
+                    android:id="@+id/etContactMethod"
+                    android:layout_below="@id/etIndustry"
+                    android:layout_toRightOf="@id/lblContactMethod"
+                    android:layout_toEndOf="@id/lblContactMethod"
+                    style="@style/GLLblNormalStyle" />
+
+                <View
+                    android:layout_below="@id/etContactMethod"
+                    style="@style/DividerTheme"/>
+
+                <!-- <TextView
+
+                     android:layout_below="@id/etContactMethod"
+                     android:text="@string/message"
+                     style="@style/GLLblBoldStyle" />
+
+                 <EditText
+                     android:hint="@string/message"
+                     android:id="@+id/etMessageQuote"
+                     android:layout_below="@id/etContactMethod"
+                     android:layout_toRightOf="@id/lblContactMethod"
+                     android:layout_toEndOf="@id/lblContactMethod"
+                     style="@style/GLEditTextTheme" />
+                 <View
+                     android:layout_below="@id/etMessageQuote"
+                     style="@style/DividerTheme"/>-->
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/quoteProposalContainer"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/lblQuoteResponseDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/GLTabStyle"
+                    android:gravity="center"
+                    android:text="Global logistics Proposal"
+                    android:textSize="17sp"
+                    android:padding="10dp"
+                    />
+                <!---->
+                <!---->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="140dp"
+                        android:id="@+id/lblOfferedPrices"
+                        android:text="Offered Price"
+                        style="@style/GLLblBoldStyle" />
+
+                    <TextView
+                        android:id="@+id/tvOfferedPrices"
+                        android:layout_toRightOf="@id/lblOfferedPrices"
+                        android:layout_toEndOf="@id/lblOfferedPrices"
+                        style="@style/GLLblNormalStyle" />
+                    <View
+                        android:layout_below="@id/tvOfferedPrices"
+                        style="@style/DividerTheme"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/lblRespondedMessage"
+                        android:layout_width="140dp"
+                        android:text="@string/message"
+                        style="@style/GLLblBoldStyle" />
+
+                    <TextView
+                        android:id="@+id/etQuoteResponseMessage"
+                        android:layout_toRightOf="@id/lblRespondedMessage"
+                        android:layout_toEndOf="@id/lblRespondedMessage"
+                        style="@style/GLLblNormalStyle"  />
+                    <View
+                        android:layout_below="@id/etQuoteResponseMessage"
+                        style="@style/DividerTheme"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/lblProposalStatus"
+                        android:layout_width="140dp"
+                        android:text="@string/message"
+                        style="@style/GLLblBoldStyle" />
+
+                    <TextView
+                        android:id="@+id/etQuoteProposalStatus"
+                        android:layout_toRightOf="@id/lblProposalStatus"
+                        android:layout_toEndOf="@id/lblProposalStatus"
+                        style="@style/GLLblNormalStyle"  />
+                    <View
+                        android:layout_below="@id/etQuoteProposalStatus"
+                        style="@style/DividerTheme"/>
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+      android:id="@+id/tvSubmitQuoteProposal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/GLButtonMarigold"
+        android:gravity="center"
+        android:text="Submit Proposal"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        />
+    <ImageView
+        android:id="@+id/ivComposeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+
+        android:src="@drawable/compose"/>
+</RelativeLayout>

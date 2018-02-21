@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/lblQuoteContactDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/GLTabStyle"
+        android:gravity="center"
+        android:text="Services Details"
+        android:textSize="17sp"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvViewContactDetails"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        style="@style/GLButtonMarigold"
+        android:gravity="center"
+        android:text="View Contact Details"
+        android:layout_margin="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        />
+
+   <ScrollView
+       android:layout_above="@+id/tvViewContactDetails"
+       android:layout_below="@+id/lblQuoteContactDetails"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/gl_background">
+
+            <TextView
+                style="@style/GLLblBoldStyle"
+                android:text="Services Of\nInterest"
+                />
+
+            <GridLayout
+                android:layout_toRightOf="@+id/lblAdditionalServices"
+                android:layout_toEndOf="@+id/lblAdditionalServices"
+                android:id="@+id/servicesOfInterestContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:columnCount="1"
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:text="HellodsdsadasdSDsadASDasdASDasd"
+                    />
+
+
+            </GridLayout>
+           <View
+                android:layout_below="@+id/servicesOfInterestContainer"
+               style="@style/DividerTheme"/>
+
+           <TextView
+               android:layout_below="@+id/servicesOfInterestContainer"
+               android:text="@string/origin"
+               style="@style/GLLblBoldStyle" />
+
+           <TextView
+               android:id="@+id/tvOrigin"
+               android:layout_below="@+id/servicesOfInterestContainer"
+               android:layout_toRightOf="@+id/lblAdditionalServices"
+               android:layout_toEndOf="@+id/lblAdditionalServices"
+               style="@style/GLLblNormalStyle" />
+
+           <View
+               android:layout_below="@id/tvOrigin"
+               style="@style/DividerTheme"/>
+
+           <TextView
+               android:layout_below="@id/tvOrigin"
+               android:text="@string/destination"
+               style="@style/GLLblBoldStyle" />
+
+
+           <TextView
+               android:id="@+id/tvDestination"
+               android:layout_below="@id/tvOrigin"
+               android:layout_toRightOf="@id/lblAdditionalServices"
+               android:layout_toEndOf="@id/lblAdditionalServices"
+               style="@style/GLLblNormalStyle"  />
+           <View
+               android:layout_below="@id/tvDestination"
+               style="@style/DividerTheme"/>
+
+           <TextView
+               android:layout_below="@id/tvDestination"
+               android:text="@string/commodity"
+               style="@style/GLLblBoldStyle" />
+
+           <TextView
+
+               android:id="@+id/etCommodity"
+               android:layout_below="@id/tvDestination"
+               android:layout_toRightOf="@id/lblAdditionalServices"
+               android:layout_toEndOf="@id/lblAdditionalServices"
+               style="@style/GLLblNormalStyle" />
+           <View
+               android:layout_below="@id/etCommodity"
+               style="@style/DividerTheme"/>
+
+           <TextView
+               android:layout_below="@id/etCommodity"
+               android:text="@string/pieces"
+               style="@style/GLLblBoldStyle" />
+
+           <TextView
+
+               android:id="@+id/etPieces"
+               android:layout_below="@id/etCommodity"
+               android:layout_toRightOf="@id/lblAdditionalServices"
+               android:layout_toEndOf="@id/lblAdditionalServices"
+               style="@style/GLLblNormalStyle" />
+           <View
+               android:layout_below="@id/etPieces"
+               style="@style/DividerTheme"/>
+
+           <TextView
+               android:layout_below="@id/etPieces"
+               android:text="@string/weight"
+               style="@style/GLLblBoldStyle" />
+
+           <TextView
+
+               android:id="@+id/etWeightCommodity"
+               android:layout_below="@id/etPieces"
+               android:layout_toRightOf="@id/lblAdditionalServices"
+               android:layout_toEndOf="@id/lblAdditionalServices"
+               style="@style/GLLblNormalStyle" />
+           <View
+               android:layout_below="@id/etWeightCommodity"
+               style="@style/DividerTheme"/>
+
+
+           <TextView
+               android:layout_below="@id/etWeightCommodity"
+               android:text="@string/other"
+               style="@style/GLLblBoldStyle" />
+
+           <TextView
+
+               android:id="@+id/etOther"
+               android:layout_below="@id/etWeightCommodity"
+               android:layout_toRightOf="@id/lblAdditionalServices"
+               android:layout_toEndOf="@id/lblAdditionalServices"
+               style="@style/GLLblNormalStyle" />
+           <View
+               android:layout_below="@id/etOther"
+               style="@style/DividerTheme"/>
+
+           <TextView
+               android:layout_below="@id/etOther"
+               android:text="@string/message"
+               style="@style/GLLblBoldStyle" />
+
+           <TextView
+
+               android:layout_below="@id/etOther"
+               android:id="@+id/etQuoteMessage"
+               android:layout_toRightOf="@id/lblAdditionalServices"
+               android:layout_toEndOf="@id/lblAdditionalServices"
+               style="@style/GLLblNormalStyle"  />
+           <View
+               android:layout_below="@id/etQuoteMessage"
+               style="@style/DividerTheme"/>
+           <TextView
+               android:layout_below="@id/etQuoteMessage"
+               android:id="@+id/lblAdditionalServices"
+               android:text="@string/add_services"
+               style="@style/GLLblBoldStyle" />
+
+           <TextView
+
+               android:id="@+id/etAdditionalServices"
+               android:layout_below="@id/etQuoteMessage"
+               android:layout_toRightOf="@id/lblAdditionalServices"
+               android:layout_toEndOf="@id/lblAdditionalServices"
+               style="@style/GLLblNormalStyle" />
+           <View
+               android:layout_below="@id/etAdditionalServices"
+               style="@style/DividerTheme"/>
+       </RelativeLayout>
+   </ScrollView>
+
+
+</RelativeLayout>
+
+
+
+

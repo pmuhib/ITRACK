@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginTop="5dp"
+    android:layout_weight="30"
+    >
+
+    <TextView
+        android:id="@+id/itrack_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/itrack_txt"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="34sp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/txt_bye"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/by_txt"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:textSize="22sp"
+        android:layout_below="@+id/itrack_heading"
+        android:gravity="center"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/logo"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txt_bye"
+        />
+</RelativeLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gl_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+       >
+
+        <RelativeLayout
+            android:id="@+id/userProfileImgContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/truck_tab_bg"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:id="@+id/imageAdminEmployee"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/circledefault"/>
+            <TextView
+                android:id="@+id/tvUploadEmployeeImg"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#c0000000"
+                android:textColor="#fff"
+                android:text="Upload Image"
+                android:padding="2dp"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/etUserFName"
+            android:layout_below="@+id/userProfileImgContainer"
+            android:hint="First Name"
+            style="@style/GLAppEditTextTheme"/>
+
+        <EditText
+            android:id="@+id/etUserLName"
+            android:layout_below="@+id/etUserFName"
+            android:hint="Last Name"
+            style="@style/GLAppEditTextTheme"/>
+
+        <EditText
+            android:id="@+id/etUserDesignation"
+            android:layout_below="@+id/etUserLName"
+            android:hint="Designation"
+            android:enabled="false"
+            android:focusable="false"
+            style="@style/GLAppEditTextTheme"/>
+
+        <EditText
+            android:id="@+id/etUserEmail"
+            android:enabled="false"
+            android:focusable="false"
+            android:layout_below="@+id/etUserDesignation"
+            android:hint="Email"
+        style="@style/GLAppEditTextTheme"/>
+
+        <!--<EditText
+            android:id="@+id/etUserPhoneNumber"
+            android:layout_below="@+id/etUserEmail"
+            android:hint="Phone Number"
+            style="@style/GLAppEditTextTheme"/>-->
+        <LinearLayout
+            android:id="@+id/phoneContainer"
+            android:layout_below="@+id/etUserEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:gravity="center_vertical">
+            <EditText
+                android:drawableLeft="@drawable/plus"
+                android:drawablePadding="5dp"
+                android:id="@+id/etCountryCode"
+                android:hint="Code"
+                android:layout_width="0dp"
+                android:layout_weight="1.1"
+                style="@style/GLAppEditTextTheme"
+                android:inputType="number"
+                android:maxLength="3"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:textColor="#fff"
+                android:text="-"/>
+            <EditText
+                android:id="@+id/etUserPhoneNumber"
+                android:hint="Mobile Number"
+                android:layout_width="0dp"
+                android:layout_weight="1.9"
+                style="@style/GLAppEditTextTheme"
+                android:inputType="number"
+                android:maxLength="15"
+                />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:enabled="false"
+            android:focusable="false"
+            android:id="@+id/etUsername"
+            android:layout_below="@+id/phoneContainer"
+            android:hint="UserName"
+            style="@style/GLAppEditTextTheme"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etUsername"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvUpdateAdminEmployeeDetail"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/btnwhiterectangle"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Update"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/tvCancelUpdate"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/btnwhiterectangle"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Cancel"
+                android:textColor="#000" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

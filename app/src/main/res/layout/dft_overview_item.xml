@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/dft_item_bg">
+
+    <TextView
+        android:id="@+id/tvDFTCategory"
+        android:text="Income Total"
+        style="@style/GLLblBoldStyleLargeGold"
+        />
+    <View
+        style="@style/SeparatorTheme"
+        />
+    <TextView
+        android:id="@+id/tvDFTCategoryTotalAmount"
+        android:text="AED 10,935"
+        style="@style/GLLblBoldStyleLargeWhite"
+        android:textColor="@color/gl_lbl_bold_txt_color"
+        />
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvAddDetailToDFTCategory"
+            android:layout_width="wrap_content"
+            style="@style/GLButtonMarigold"
+            android:text="Add Details"
+
+            android:layout_margin="4dp"
+            />
+        <TextView
+            android:id="@+id/tvViewDFTCategoryDetails"
+            android:layout_width="wrap_content"
+            style="@style/GLButtonMarigold"
+            android:text="View Details"
+            android:layout_margin="4dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

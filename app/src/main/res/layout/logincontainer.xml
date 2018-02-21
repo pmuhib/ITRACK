@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gl_toolbar"
+            android:padding="10dp">
+            <ImageView
+                android:paddingRight="20dp"
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_icon"
+                android:background="?attr/selectableItemBackground"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/txt_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:gravity="center"/>
+        </RelativeLayout>
+
+
+
+        <FrameLayout
+            android:id="@+id/framecontainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

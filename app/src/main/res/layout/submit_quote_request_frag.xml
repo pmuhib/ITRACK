@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gl_background"
+   >
+
+    <TextView
+        android:id="@+id/tvITrack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/itrack_txt"
+        android:textColor="#ffffff"
+        android:textSize="46sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/tvByStr"
+        android:layout_below="@id/tvITrack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/by_txt"
+        android:textSize="26sp"
+        android:textColor="#FFF"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+
+        android:layout_below="@id/tvByStr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+       />
+
+    <TextView
+        android:id="@+id/tvNoQuoteReqMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Quote Request"
+        android:textColor="#fff"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tvQuoteSubmitRequest"
+        android:layout_below="@id/tvNoQuoteReqMsg"
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/GLButtonMarigold"
+        android:text="@string/submit_now"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:layout_below="@+id/tvQuoteSubmitRequest"
+        android:id="@+id/tvSubmitQuoteAfterSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit after Login"
+        style="@style/GLButtonMarigold"
+        android:textColor="#fff"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:textSize="15sp"/>
+
+</RelativeLayout>

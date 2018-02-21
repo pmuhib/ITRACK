@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gl_background"
+    tools:context=".activities.ContactUs">
+    <include
+        android:id="@+id/toolbar_contact_us"
+        layout="@layout/detailtoolbar"
+        />
+    <RelativeLayout
+        android:id="@+id/contactUsContainer"
+        android:padding="5dp"
+        android:layout_below="@+id/toolbar_contact_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/companyLogo"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:contentDescription="@string/global_txt"
+            android:layout_height="60dp"
+            android:src="@drawable/logo"/>
+
+        <RelativeLayout
+            android:layout_margin="5dp"
+            android:id="@+id/contactUsInfoContainer"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/companyLogo"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ivAddressIcn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/address_icn"
+                android:padding="2dp"
+                android:contentDescription="@string/contact_address"
+                android:layout_margin="2dp"/>
+
+            <TextView
+
+                android:id="@+id/tvContactAddress"
+                android:layout_toRightOf="@+id/ivContactFax"
+                android:layout_toEndOf="@+id/ivContactFax"
+                style="@style/GLLblNormalStyle"
+                android:padding="2dp"
+                android:layout_margin="2dp"
+                android:text="@string/contact_address"/>
+
+            <ImageView
+                android:padding="2dp"
+                android:layout_margin="2dp"
+                android:layout_below="@+id/tvContactAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/contact_mobile"
+                android:src="@drawable/mobile_icn"/>
+
+            <TextView
+                android:padding="2dp"
+                android:layout_margin="2dp"
+                android:id="@+id/tvContactMobile"
+                android:layout_below="@+id/tvContactAddress"
+                android:layout_toRightOf="@+id/ivContactFax"
+                android:layout_toEndOf="@+id/ivContactFax"
+                style="@style/GLLblNormalStyle"
+                android:text="@string/contact_mobile"/>
+            <ImageView
+                android:padding="2dp"
+                android:layout_margin="2dp"
+                android:layout_below="@+id/tvContactMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/contact_telephone"
+                android:src="@drawable/telephone_icn"/>
+
+            <TextView
+                android:padding="2dp"
+                android:layout_margin="2dp"
+                android:id="@+id/tvContactTelephone"
+                android:layout_below="@+id/tvContactMobile"
+                android:layout_toRightOf="@+id/ivContactFax"
+                android:layout_toEndOf="@+id/ivContactFax"
+                style="@style/GLLblNormalStyle"
+                android:text="@string/contact_telephone" />
+            <ImageView
+                android:id="@+id/ivContactFax"
+                android:padding="2dp"
+                android:layout_margin="2dp"
+                android:layout_below="@+id/tvContactTelephone"
+                android:contentDescription="@string/contact_telephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fax_icn"/>
+
+            <TextView
+                android:padding="2dp"
+                android:layout_margin="2dp"
+                android:layout_below="@+id/tvContactTelephone"
+                android:layout_toRightOf="@+id/ivContactFax"
+                android:layout_toEndOf="@+id/ivContactFax"
+                style="@style/GLLblNormalStyle"
+                android:text="@string/contact_fax"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/contactUsInfoContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+            <TextView
+                android:id="@+id/tvContactMap"
+                android:layout_margin="5dp"
+                style="@style/GLButtonMarigold"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/map_icn"
+                android:drawableStart="@drawable/map_icn"
+                android:textSize="16sp"
+                android:text="@string/map"/>
+            <TextView
+                android:id="@+id/tvContactCallBack"
+                android:layout_margin="5dp"
+                style="@style/GLButtonMarigold"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/call_back_icn"
+                android:drawableStart="@drawable/call_back_icn"
+                android:textSize="16sp"
+                android:text="@string/call_back"/>
+            <TextView
+                android:id="@+id/tvContactEmail"
+                android:layout_margin="5dp"
+                style="@style/GLButtonMarigold"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:drawableLeft="@drawable/email_icn"
+                android:drawableStart="@drawable/email_icn"
+                android:text="@string/email"/>
+        </LinearLayout>
+
+
+
+        <!--***********************-->
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/flContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:layout_below="@+id/contactUsContainer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

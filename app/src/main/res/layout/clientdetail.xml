@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gl_background"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/detailtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:elevation="5dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/companyLogo"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/circledefault"
+                />
+            <TextView
+                android:id="@+id/companyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:text=""
+                android:visibility="gone"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/btn_viewemployee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="@string/view_employees"
+                android:layout_below="@+id/companyLogo"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp"
+                android:textColor="#d9d9d9"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@drawable/rectangleread"/>
+
+            <View
+                android:layout_below="@+id/btn_viewemployee"
+                style="@style/DividerTheme"/>
+
+            <TextView
+                android:id="@+id/lblClientCompWebsite"
+                android:layout_below="@+id/btn_viewemployee"
+                android:text="@string/website"
+                style="@style/GLLblBoldStyle"
+                />
+
+            <TextView
+                android:layout_toRightOf="@+id/lblClientCompWebsite"
+                android:layout_toEndOf="@+id/lblClientCompWebsite"
+                android:layout_below="@+id/btn_viewemployee"
+                android:id="@+id/companywebsite"
+                 style="@style/GLLblNormalStyle"
+                />
+            <View
+                android:layout_below="@+id/companywebsite"
+                style="@style/DividerTheme"/>
+            <TextView
+                android:id="@+id/lblClientCompEmail"
+                android:layout_below="@+id/companywebsite"
+                android:text="@string/email"
+                style="@style/GLLblBoldStyle"
+                />
+
+            <TextView
+                android:layout_toRightOf="@+id/lblClientCompWebsite"
+                android:layout_toEndOf="@+id/lblClientCompWebsite"
+                android:layout_below="@+id/companywebsite"
+                android:id="@+id/clientemail"
+                style="@style/GLLblNormalStyle"
+                />
+
+            <View
+                android:layout_below="@+id/clientemail"
+                style="@style/DividerTheme"/>
+            <TextView
+                android:id="@+id/lblClientCompPhone"
+                android:layout_below="@+id/clientemail"
+                android:text="@string/phone"
+                style="@style/GLLblBoldStyle"
+                />
+
+            <TextView
+                android:layout_toRightOf="@+id/lblClientCompWebsite"
+                android:layout_toEndOf="@+id/lblClientCompWebsite"
+                android:layout_below="@+id/clientemail"
+                android:id="@+id/phoneno"
+                style="@style/GLLblNormalStyle"
+                />
+
+            <View
+                android:layout_below="@+id/phoneno"
+                style="@style/DividerTheme"/>
+            <TextView
+                android:id="@+id/lblClientCompFax"
+                android:layout_below="@+id/phoneno"
+                android:text="@string/fax"
+                style="@style/GLLblBoldStyle"
+
+                />
+
+            <TextView
+                android:layout_toRightOf="@+id/lblClientCompWebsite"
+                android:layout_toEndOf="@+id/lblClientCompWebsite"
+                android:layout_below="@+id/phoneno"
+                android:id="@+id/clientfax"
+                style="@style/GLLblNormalStyle"
+                />
+
+            <View
+                android:layout_below="@+id/clientfax"
+                style="@style/DividerTheme"/>
+            <TextView
+                android:id="@+id/lblClientCompAddress"
+                android:layout_below="@+id/clientfax"
+                android:text="@string/address"
+                style="@style/GLLblBoldStyle"
+                />
+
+            <TextView
+                android:id="@+id/companyaddress"
+                android:layout_toRightOf="@+id/lblClientCompWebsite"
+                android:layout_toEndOf="@+id/lblClientCompWebsite"
+                android:layout_below="@+id/clientfax"
+                android:ellipsize="end"
+                style="@style/GLLblNormalStyle"
+
+                />
+            <View
+                android:layout_below="@+id/companyaddress"
+                style="@style/DividerTheme"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

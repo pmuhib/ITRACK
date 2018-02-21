@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:background="@android:color/transparent">
+    <EditText
+       android:id="@+id/etLocationPoint"
+        style="@style/GLEditTextTheme"  />
+    <Spinner
+        android:visibility="gone"
+        android:id="@+id/spinnerCountryList"
+        style="@style/GLSpinnerTheme" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autocompleteTVCountry"
+        android:layout_width="match_parent"
+        style="@style/GLAutoTextViewTheme"
+        android:ems="10"
+        android:hint="Select Country"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:completionThreshold="1"
+        android:singleLine="true"
+        />
+
+    <Spinner
+        android:visibility="gone"
+        android:id="@+id/spinnerCityList"
+        style="@style/GLSpinnerTheme" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autocompleteTVCity"
+        android:layout_width="match_parent"
+        style="@style/GLAutoTextViewTheme"
+        android:ems="10"
+        android:hint="Select City"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:completionThreshold="1"
+        android:singleLine="true"
+        />
+</LinearLayout>

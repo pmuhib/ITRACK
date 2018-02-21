@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gl_background"
+        android:weightSum="15"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etxt_companyName"
+            android:hint="@string/cmp_txt"
+            style="@style/GLAppEditTextTheme" />
+
+        <EditText
+            android:id="@+id/etxt_firstAddress"
+            android:hint="@string/address1_txt"
+            style="@style/GLAppEditTextTheme" />
+
+        <EditText
+            android:id="@+id/etxt_secondAddress"
+            style="@style/GLAppEditTextTheme"
+            android:hint="@string/address2_txt"
+            />
+
+        <Spinner
+            android:id="@+id/country_spinner"
+            android:layout_width="match_parent"
+            style="@style/GLAPPSpinnerTheme"/>
+
+        <Spinner
+            android:id="@+id/state_spinner"
+            android:layout_width="match_parent"
+
+            style="@style/GLAPPSpinnerTheme"/>
+
+        <Spinner
+            android:id="@+id/city_spinner"
+            android:layout_width="match_parent"
+
+            style="@style/GLAPPSpinnerTheme"/>
+
+        <EditText
+            android:id="@+id/etxt_zipCode"
+            android:hint="@string/zipcode_txt"
+            style="@style/GLAppEditTextTheme"/>
+
+        <EditText
+            android:id="@+id/etxt_phone"
+
+            android:hint="@string/phone_txt"
+            style="@style/GLAppEditTextTheme" />
+
+        <EditText
+            android:id="@+id/etxt_emailAddress"
+            style="@style/GLAppEditTextTheme"
+            android:hint="@string/email_txt"
+            />
+
+        <EditText
+            android:id="@+id/etxt_fax"
+            android:hint="@string/fax_txt"
+            style="@style/GLAppEditTextTheme" />
+
+        <EditText
+            android:id="@+id/etxt_domain"
+            style="@style/GLAppEditTextTheme"
+            android:hint="@string/domain_txt"
+            />
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/GLAppEditTextTheme"
+                android:layout_width="wrap_content"
+                android:text="@string/cmplogo_txt"
+                />
+            <RelativeLayout
+                android:id="@+id/etxt_cmplogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle"
+                >
+                <ImageView
+                    android:id="@+id/iconupload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/icon_upload"/>
+                <TextView
+                    android:layout_toRightOf="@+id/iconupload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:text="Choose File"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/txt_cancel"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:padding="5dp"
+                android:layout_alignParentLeft="true"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:background="@drawable/btnwhiterectangle"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/txt_next"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:background="@drawable/btnwhiterectangle"
+                android:gravity="center"/>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>
+

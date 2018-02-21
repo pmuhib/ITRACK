@@ -1,0 +1,210 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:popupBackground">@color/gl_background</item>
+
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="GLAppEditTextTheme">
+        <item name="android:background">@drawable/rectangle</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#a2a6a9</item>
+        <item name="android:textColorHint">#a2a6a9</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+    <style name="AppSpinner" parent="Widget.AppCompat.Spinner">
+        <item name="android:background">@drawable/rectangle</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textColorHint">#A1B3BC</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="GLAPPSpinnerTheme">
+        <item name="android:background">@drawable/dd_bg</item>
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/gl_dd_txt_color</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:popupBackground">@color/gl_background</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+
+
+    <style name="DividerTheme">
+        <item name="android:background">@drawable/list_item_divider</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+    <style name="SeparatorTheme">
+    <item name="android:background">@color/gl_dft_separator_color</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">1dp</item>
+</style>
+
+    <style name="GLLblBoldStyleBase">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="GLLblBoldStyle" parent="GLLblBoldStyleBase">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/gl_lbl_bold_txt_color</item>
+    </style>
+    <style name="GLLblBoldStyleLargeGold" parent="GLLblBoldStyleBase">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gl_lbl_bold_txt_color</item>
+    </style>
+
+    <style name="GLLblBoldStyleLargeWhite" parent="GLLblBoldStyleBase">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFF</item>
+    </style>
+
+
+
+    <style name="GLLblNormalStyle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="GLEditTextTheme">
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@drawable/edittext_bg</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#a2a6a9</item>
+        <item name="android:textColorHint">#a2a6a9</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="GLSpinnerTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/gl_dd_txt_color</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:popupBackground">@color/gl_tab_host_bg_color</item>
+    </style>
+
+    <style name="GLAutoTextViewTheme">
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@drawable/edittext_bg</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">#a2a6a9</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textColor">@color/gl_dd_txt_color</item>
+        <item name="android:popupBackground">@color/gl_tab_host_bg_color</item>
+    </style>
+
+    <style name="GLAPPAutoTextViewTheme">
+        <item name="android:textColor">@color/gl_dd_txt_color</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:popupBackground">@color/gl_tab_host_bg_color</item>
+        <item name="android:background">@drawable/rectangle</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">#a2a6a9</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+
+    <style name="GLDialogTheme">
+        <item name="android:popupBackground">@color/gl_tab_host_bg_color</item>
+    </style>
+
+
+    <style name="GLButtonBaseTheme">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    <style name="GLButtonMarigold" parent="GLButtonBaseTheme">
+        <item name="android:textColor">#d9d9d9</item>
+        <item name="android:background">@drawable/rectangleread</item>
+    </style>
+    <style name="GLButtonWhite" parent="GLButtonBaseTheme">
+        <item name="android:textColor">#000000</item>
+        <item name="android:background">@drawable/btnwhiterectangle</item>
+    </style>
+
+    <style name="GLTabStyle" >
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#839eb3</item>
+        <item name="android:background">#2e373e</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="GLDashboardIcnStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+       <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="GLDashboardButtonStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="GLSocialButtonStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+
+    <style name="GLCalenderStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/gl_lbl_bold_txt_color</item>
+    </style>
+</resources>

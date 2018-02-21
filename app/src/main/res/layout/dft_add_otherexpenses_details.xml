@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingBottom="30dp"
+
+        android:background="#242831">
+
+        <TextView
+            android:id="@+id/tvDFTCategory"
+            android:textSize="22sp"
+            android:padding="10dp"
+            style="@style/GLLblBoldStyleLargeGold"
+            />
+        <View
+            style="@style/SeparatorTheme"
+            />
+
+        <EditText
+            android:visibility="gone"
+            style="@style/GLAppEditTextTheme"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:hint="AED"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="#A1B3BC" />
+        <EditText
+            style="@style/GLAppEditTextTheme"
+            android:layout_width="match_parent"
+            android:id="@+id/etPaymentTypeName"
+            android:gravity="center"
+            android:hint="Name"
+            android:lines="1"
+            android:maxLines="1"
+            android:layout_margin="10dp"
+            android:textColor="#A1B3BC" />
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:id="@+id/btnContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <EditText
+                style="@style/GLAppEditTextTheme"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/etPaymentAmount"
+                android:gravity="center"
+                android:hint="Amount"
+                android:inputType="numberDecimal|numberSigned"
+                android:lines="1"
+                android:maxLines="1"
+                android:layout_margin="5dp"
+                android:textColor="#A1B3BC" />
+
+            <EditText
+                android:focusable="false"
+                android:editable="false"
+                android:id="@+id/etPaymentCurrencyCode"
+                style="@style/GLAppEditTextTheme"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:hint="AED"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLines="1"
+                android:textColor="#A1B3BC" />
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/etDFTPaymentComment"
+            style="@style/GLAppEditTextTheme"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:hint="Comments"
+            android:padding="10dp"
+            android:gravity="top"
+            android:textColor="#A1B3BC" />
+
+        <LinearLayout
+            android:id="@+id/documentContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDftDocument"
+            android:layout_width="wrap_content"
+            style="@style/GLButtonMarigold"
+            android:drawablePadding="10dp"
+            android:text="Add Documents"
+            android:drawableLeft="@drawable/doc_upload"
+            android:drawableStart="@drawable/doc_upload"
+            android:textSize="16sp"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tvAddDftDetail"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:text="Submit"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:background="@drawable/btnwhiterectangle"
+            android:gravity="center"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/ivCloseLoginPopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/close"
+        android:layout_gravity="end"/>
+</FrameLayout>
+
+

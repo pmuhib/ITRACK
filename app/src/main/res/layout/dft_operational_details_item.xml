@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+    <TextView
+        android:id="@+id/tvDFTDate"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        style="@style/GLButtonWhite"
+        android:text="10-12-2016"/>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/dft_item_bg">
+
+
+        <TextView
+            android:text="Date"
+            style="@style/GLLblBoldStyleLargeGold"
+            />
+
+        <TextView
+
+            android:layout_toRightOf="@+id/lblDocumentDFTType"
+            android:layout_toEndOf="@+id/lblDocumentDFTType"
+            android:id="@+id/tvDFTModeOfPaymentDate"
+            android:textSize="17sp"
+            style="@style/GLLblNormalStyle"
+            />
+
+        <View
+            android:layout_below="@+id/tvDFTModeOfPaymentDate"
+            style="@style/SeparatorTheme"
+            />
+
+        <TextView
+            android:layout_below="@+id/tvDFTModeOfPaymentDate"
+            android:layout_toLeftOf="@+id/tvDFTModeOfPaymentComments"
+            android:layout_toStartOf="@+id/tvDFTModeOfPaymentComments"
+            android:id="@+id/tvDFTModeOfPayment"
+            android:text="Cash"
+            android:layout_width="match_parent"
+            style="@style/GLLblBoldStyleLargeGold"
+            />
+        <TextView
+            android:layout_below="@+id/tvDFTModeOfPaymentDate"
+            android:layout_toRightOf="@+id/lblDocumentDFTType"
+            android:layout_toEndOf="@+id/lblDocumentDFTType"
+            android:id="@+id/tvDFTModeOfPaymentAmount"
+            android:text="AED 12,345"
+            android:textSize="17sp"
+            style="@style/GLLblNormalStyle"
+            />
+        <View
+            android:layout_below="@+id/tvDFTModeOfPayment"
+            style="@style/SeparatorTheme"
+            />
+        <TextView
+            android:layout_below="@+id/tvDFTModeOfPayment"
+            android:text="@string/dsr_ref_no"
+            style="@style/GLLblBoldStyleLargeGold"
+            />
+        <TextView
+            android:textSize="17sp"
+            android:maxLines="1"
+            android:id="@+id/tvDFTDSRRefNumber"
+            android:layout_below="@+id/tvDFTModeOfPayment"
+            android:layout_toRightOf="@+id/lblDocumentDFTType"
+            android:layout_toEndOf="@+id/lblDocumentDFTType"
+            android:text=""
+            style="@style/GLLblNormalStyle"
+            />
+        <View
+            android:layout_below="@+id/tvDFTDSRRefNumber"
+            style="@style/SeparatorTheme"
+            />
+
+        <TextView
+            android:layout_below="@+id/tvDFTDSRRefNumber"
+            android:id="@+id/lblDocumentDFTType"
+            android:text="Documents"
+            android:layout_width="120dp"
+            style="@style/GLLblBoldStyleLargeGold"
+            />
+        <ImageView
+            android:id="@+id/ivDFTDocument"
+            android:visibility="gone"
+            android:layout_below="@+id/tvDFTDSRRefNumber"
+            android:layout_toRightOf="@+id/lblDocumentDFTType"
+            android:layout_toEndOf="@+id/lblDocumentDFTType"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/doc_upload"/>
+        <GridLayout
+            android:visibility="gone"
+            android:id="@+id/dftMOPDocumentsContainer"
+            android:layout_below="@+id/tvDFTDSRRefNumber"
+            android:layout_toRightOf="@+id/lblDocumentDFTType"
+            android:layout_toEndOf="@+id/lblDocumentDFTType"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/doc_upload"/>
+            <ImageView
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/doc_upload"/>
+            <ImageView
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/doc_upload"/>
+
+        </GridLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>
